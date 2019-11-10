@@ -42,13 +42,13 @@
 
                                             <li>
                                                 <figure>
-                                                    <a href="http://wordpress.local/DAWP/sản phẩm/<?php the_title() ?>"><?php the_post_thumbnail(); ?></a>
+                                                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
                                                     <a class="aa-add-card-btn " href="?add-to-cart=<?php the_ID(); ?>"><span class="fa fa-shopping-cart"></span>Mua Ngay
 
                                                     </a>
                                                     <figcaption>
                                                         <h4 class="aa-product-title"><a
-                                                                    href="http://wordpress.local/DAWP/sản phẩm/<?php the_title() ?>""> <?php the_title(); ?></a>
+                                                                    href="<?php the_permalink(); ?>"> <?php the_title(); ?></a>
                                                         </h4>
                                                         <span class="aa-product-price"><?php $price = get_post_meta(get_the_ID(), "price", true) ?>></span><span
                                                                 class="aa-product-price"><del>$65.50</del></span>
