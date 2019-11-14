@@ -44,7 +44,6 @@
                                                 <figure>
                                                     <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
                                                     <a class="aa-add-card-btn " href="?add-to-cart=<?php the_ID(); ?>"><span class="fa fa-shopping-cart"></span>Mua Ngay
-
                                                     </a>
                                                     <figcaption>
                                                         <h4 class="aa-product-title"><a
@@ -59,7 +58,7 @@
                                                        title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
                                                     <a href="#" data-toggle="tooltip" data-placement="top"
                                                        title="Compare"><span class="fa fa-exchange"></span></a>
-                                                    <a href="http://wordpress.local/DAWP/single/"><span
+                                                    <a href="<?php the_permalink(); ?>"><span
                                                                 class="fa fa-search">View</span></a>
                                                 </div>
                                                 <!-- product badge -->
@@ -75,7 +74,7 @@
                                 </div>
                                 <!-- / men product category -->
                                 <!-- start women product category -->
-                                <div class="tab-pane fade" id="women">
+                                <div class="tab-pane " id="women">
                                     <ul class="aa-product-catg">
                                         <!-- start single product item -->
                                         <li>
