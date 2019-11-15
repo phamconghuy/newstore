@@ -19,7 +19,6 @@
 						'after'  => '</div>',
 					) );
 				?>
-
 				<div class="clearfix"></div>
 			</div><!-- .entry-content -->
 			<div class="clearfix"></div>

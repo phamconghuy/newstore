@@ -1611,8 +1611,6 @@ header#masthead {
 }
 
 .header-topbar {
-    /* background-color: #da2260; */
-    border-bottom: 1px solid #ddd;
     font-size: 13px;
 }
 
@@ -1645,6 +1643,7 @@ span.contact-link a {
 
 .header-middle {
     padding: 5px 0px;
+    height: 115px;
 }
 .header-middle > .container, 
 .header-middle > .container > .row{
@@ -1658,6 +1657,7 @@ span.contact-link a {
 .header-main {
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
+
 }
 
 .small-header .header-main {
