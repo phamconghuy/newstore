@@ -57,7 +57,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #333333;
+  color: #ffbf19;
 }
 
 a:hover,
@@ -225,6 +225,7 @@ img {
 }
 #aa-header .aa-header-top {
   border-bottom: 1px solid #E8E8E8;
+  border-top: 1px solid #E8E8E8;
   display: inline;
   float: left;
   width: 100%;
@@ -335,6 +336,7 @@ img {
 #aa-header .aa-header-top .aa-header-top-left .cellphone {
   border-right: 1px solid #ddd;
   float: left;
+  color: #ffbf19;
 }
 #aa-header .aa-header-top .aa-header-top-left .cellphone p {
   font-size: 14px;
@@ -357,7 +359,6 @@ img {
 }
 #aa-header .aa-header-top .aa-header-top-right .aa-head-top-nav-right li a {
   display: inline-block;
-  color: #333333;
   border-right: 1px solid #ddd;
   font-size: 14px;
   padding: 5px 8px;
@@ -638,7 +639,7 @@ img {
   width: 100%;
 }
 #menu .menu-area .navbar-default .navbar-nav li a {
-  color: #fff;
+  color: #996565;
   font-size: 16px;
   padding: 10px 15px;
   -webkit-transition: all 0.5s;
@@ -3354,6 +3355,7 @@ img {
   width: 100%;
 }
 #aa-footer .aa-footer-top {
+  border-top: 5px solid #ffbf19;
   display: inline;
   float: left;
   padding: 50px 0;
@@ -3409,7 +3411,8 @@ img {
   border-color: #fff;
 }
 #aa-footer .aa-footer-bottom {
-  border-top: 1px solid #333;
+  border-top: 1px solid #ffbf19;
+  border-bottom: 5px solid #ffbf19;
   display: inline;
   float: left;
   padding: 15px 0;
