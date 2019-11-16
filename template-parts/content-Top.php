@@ -21,29 +21,20 @@
 
                                         <!--Bắt đầu một sản phẩm-->
                                         <?php
-                                        $products = new WP_Query(array(
+                                        $vnkings = new WP_Query(array(
                                             'post_type'      => 'product',
                                             'post_status'    => 'publish',
                                             'tax_query'      => array(
                                                 array(
                                                     'taxonomy' => 'product_cat',
-                                                    'field'    => 'slug',
-                                                    'terms'    => 'danh-muc-1'
+                                                    'field'    => 'id',
+                                                    'terms'    => 'ID_Của_Danh_Mục_Sản_Phẩm'
                                                 )
                                             ),
                                             'orderby'        => 'ID',
                                             'order'          => 'ASC',
                                             'posts_per_page' => '8'));
                                         ?>
-<<<<<<< HEAD
-                                        <?php while ($products->have_posts()) :
-                                            $products->the_post(); ?>
-                                            <?php
-                                            ?>
-                                            <li>
-                                                <figure>
-                                                    <a href="<?php the_permalink() ?>"><?php the_post_thumbnail('width="250" height="300"'); ?></a>
-=======
                                         <?php while ($vnkings->have_posts()) :
                                             $vnkings->the_post(); ?>
 
@@ -52,7 +43,6 @@
                                             <li>
                                                 <figure>
                                                     <a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?></a>
->>>>>>> d9124c772bf8a80a38d00d0d5c75b3446aa95d24
                                                     <a class="aa-add-card-btn "
                                                        href="?add-to-cart=<?php the_ID(); ?>"><span
                                                                 class="fa fa-shopping-cart"></span>Mua Ngay
@@ -63,8 +53,8 @@
                                                                     href="<?php the_permalink() ?>"
                                                                     rel="bookmark"> <?php the_title(); ?></a>
                                                         </h4>
-                                                        <span class="aa-product-price">$<?php echo get_post_meta(get_the_ID(), '_regular_price', true); ?></span>
-                                                        <span class="aa-product-price"><del>$<?php echo get_post_meta(get_the_ID(), '_sale_price', true); ?></del></span>
+                                                        <span class="aa-product-price"><?php $price = get_post_meta(get_the_ID(), "price", true) ?>></span><span
+                                                                class="aa-product-price"><del>$65.50</del></span>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="aa-product-hvr-content">
@@ -81,10 +71,9 @@
                                             <!-- Sản phẩm --><?php endwhile;
                                         wp_reset_query(); ?>
 
+
                                     </ul>
-                                    <a class="aa-browse-btn"
-                                       href="http://wordpress.local:8080/DAWP/danh-muc-san-pham/danh-muc-1/">Xem tất cả
-                                        sản phẩm <span
+                                    <a class="aa-browse-btn" href="#">Browse all Product <span
                                                 class="fa fa-long-arrow-right"></span></a>
                                 </div>
                                 <!-- / men product category -->
@@ -92,21 +81,14 @@
 
                                 <!--ĐÓNG DANH MỤC SẢN PHẨM THỨ 2-->
                                 <div class="tab-pane fade" id="dm2">
-<<<<<<< HEAD
-=======
                                     <a class="aa-browse-btn" href="#">Browse all Product <span
                                                 class="fa fa-long-arrow-right"></span></a>
->>>>>>> d9124c772bf8a80a38d00d0d5c75b3446aa95d24
                                     <ul class="aa-product-catg">
                                         <!-- start single product item -->
 
                                         <!--Bắt đầu một sản phẩm-->
                                         <?php
-<<<<<<< HEAD
-                                        $products = new WP_Query(array(
-=======
                                         $vnkings = new WP_Query(array(
->>>>>>> d9124c772bf8a80a38d00d0d5c75b3446aa95d24
                                             'post_type'      => 'product',
                                             'post_status'    => 'publish',
                                             'tax_query'      => array(
@@ -120,26 +102,15 @@
                                             'order'          => 'ASC',
                                             'posts_per_page' => '4'));
                                         ?>
-<<<<<<< HEAD
-                                        <?php while ($products->have_posts()) : $products->the_post(); ?>
-=======
                                         <?php while ($vnkings->have_posts()) : $vnkings->the_post(); ?>
->>>>>>> d9124c772bf8a80a38d00d0d5c75b3446aa95d24
 
 
                                             <li>
                                                 <figure>
                                                     <a href="#"><?php the_post_thumbnail(); ?></a>
-<<<<<<< HEAD
-<!--                                                    <a href="#">--><?php //the_post_thumbnail("medium",array( "title" => get_the_title(),"alt" => get_the_title() ));?><!--</a>-->
-                                                    <a class="aa-add-card-btn"
-                                                       href="<?php the_permalink() ?>"><span
-                                                                class="fa fa-shopping-cart"></span>Mua Ngay</a>
-=======
                                                     <a class="aa-add-card-btn"
                                                        href="<?php the_permalink() ?>"><span
                                                                 class="fa fa-shopping-cart"></span>Add To Cart</a>
->>>>>>> d9124c772bf8a80a38d00d0d5c75b3446aa95d24
                                                     <figcaption>
                                                         <h4 class="aa-product-title"><a
                                                                     href="#"> <?php the_title(); ?></a></h4>
@@ -152,12 +123,7 @@
                                                        title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
                                                     <a href="#" data-toggle="tooltip" data-placement="top"
                                                        title="Compare"><span class="fa fa-exchange"></span></a>
-<<<<<<< HEAD
-                                                    <a href="<?php the_permalink() ?>" data-toggle2="tooltip"
-                                                       data-placement="top"
-=======
                                                     <a href="<?php the_permalink() ?>" data-toggle2="tooltip" data-placement="top"
->>>>>>> d9124c772bf8a80a38d00d0d5c75b3446aa95d24
                                                        title="Quick View" data-toggle="modal"
                                                        data-target="#quick-view-modal"><span
                                                                 class="fa fa-search"></span></a>
@@ -169,38 +135,21 @@
                                         wp_reset_query(); ?>
 
                                         <!-- start single product item -->
-<<<<<<< HEAD
-                                        <a class="aa-browse-btn"
-                                           href="http://wordpress.local:8080/DAWP/danh-muc-san-pham/danh-muc-2/">Xem tất
-                                            cả sản phẩm <span
-                                                    class="fa fa-long-arrow-right"></span></a>
-=======
 
->>>>>>> d9124c772bf8a80a38d00d0d5c75b3446aa95d24
                                     </ul>
                                 </div>
                                 <!--ĐÓNG DANH MỤC SẢN PHẨM THỨ 2-->
 
                                 <!--ĐÓNG DANH MỤC SẢN PHẨM THỨ 3-->
                                 <div class="tab-pane fade" id="dm3">
-<<<<<<< HEAD
-                                    <a class="aa-browse-btn"
-                                       href="http://wordpress.local:8080/DAWP/danh-muc-san-pham/danh-muc-3/">Xem tất cả
-                                        sản phẩm <span
-=======
                                     <a class="aa-browse-btn" href="#">Browse all Product <span
->>>>>>> d9124c772bf8a80a38d00d0d5c75b3446aa95d24
                                                 class="fa fa-long-arrow-right"></span></a>
                                     <ul class="aa-product-catg">
                                         <!-- start single product item -->
 
                                         <!--Bắt đầu một sản phẩm-->
                                         <?php
-<<<<<<< HEAD
-                                        $products = new WP_Query(array(
-=======
                                         $vnkings = new WP_Query(array(
->>>>>>> d9124c772bf8a80a38d00d0d5c75b3446aa95d24
                                             'post_type'      => 'product',
                                             'post_status'    => 'publish',
                                             'tax_query'      => array(
@@ -214,11 +163,7 @@
                                             'order'          => 'ASC',
                                             'posts_per_page' => '8'));
                                         ?>
-<<<<<<< HEAD
-                                        <?php while ($products->have_posts()) : $products->the_post(); ?>
-=======
                                         <?php while ($vnkings->have_posts()) : $vnkings->the_post(); ?>
->>>>>>> d9124c772bf8a80a38d00d0d5c75b3446aa95d24
 
 
                                             <li>
@@ -226,11 +171,7 @@
                                                     <a href="#"><?php the_post_thumbnail(); ?></a>
                                                     <a class="aa-add-card-btn"
                                                        href="<?php the_permalink() ?>"><span
-<<<<<<< HEAD
-                                                                class="fa fa-shopping-cart"></span>Mua Ngay</a>
-=======
                                                                 class="fa fa-shopping-cart"></span>Add To Cart</a>
->>>>>>> d9124c772bf8a80a38d00d0d5c75b3446aa95d24
                                                     <figcaption>
                                                         <h4 class="aa-product-title"><a
                                                                     href="#"> <?php the_title(); ?></a></h4>
@@ -243,12 +184,7 @@
                                                        title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
                                                     <a href="#" data-toggle="tooltip" data-placement="top"
                                                        title="Compare"><span class="fa fa-exchange"></span></a>
-<<<<<<< HEAD
-                                                    <a href="<?php the_permalink() ?>" data-toggle2="tooltip"
-                                                       data-placement="top"
-=======
                                                     <a href="<?php the_permalink() ?>" data-toggle2="tooltip" data-placement="top"
->>>>>>> d9124c772bf8a80a38d00d0d5c75b3446aa95d24
                                                        title="Quick View" data-toggle="modal"
                                                        data-target="#quick-view-modal"><span
                                                                 class="fa fa-search"></span></a>
@@ -267,24 +203,14 @@
 
                                 <!--ĐÓNG DANH MỤC SẢN PHẨM THỨ 4-->
                                 <div class="tab-pane fade" id="dm4">
-<<<<<<< HEAD
-                                    <a class="aa-browse-btn"
-                                       href="http://wordpress.local:8080/DAWP/danh-muc-san-pham/danh-muc-4/">Xem tất cả
-                                        sản phẩm <span
-=======
                                     <a class="aa-browse-btn" href="#">Browse all Product <span
->>>>>>> d9124c772bf8a80a38d00d0d5c75b3446aa95d24
                                                 class="fa fa-long-arrow-right"></span></a>
                                     <ul class="aa-product-catg">
                                         <!-- start single product item -->
 
                                         <!--Bắt đầu một sản phẩm-->
                                         <?php
-<<<<<<< HEAD
-                                        $products = new WP_Query(array(
-=======
                                         $vnkings = new WP_Query(array(
->>>>>>> d9124c772bf8a80a38d00d0d5c75b3446aa95d24
                                             'post_type'      => 'product',
                                             'post_status'    => 'publish',
                                             'tax_query'      => array(
@@ -298,11 +224,7 @@
                                             'order'          => 'ASC',
                                             'posts_per_page' => '8'));
                                         ?>
-<<<<<<< HEAD
-                                        <?php while ($products->have_posts()) : $products->the_post(); ?>
-=======
                                         <?php while ($vnkings->have_posts()) : $vnkings->the_post(); ?>
->>>>>>> d9124c772bf8a80a38d00d0d5c75b3446aa95d24
 
 
                                             <li>
@@ -310,11 +232,7 @@
                                                     <a href="#"><?php the_post_thumbnail(); ?></a>
                                                     <a class="aa-add-card-btn"
                                                        href="<?php the_permalink() ?>"><span
-<<<<<<< HEAD
-                                                                class="fa fa-shopping-cart"></span>Mua Ngay</a>
-=======
                                                                 class="fa fa-shopping-cart"></span>Add To Cart</a>
->>>>>>> d9124c772bf8a80a38d00d0d5c75b3446aa95d24
                                                     <figcaption>
                                                         <h4 class="aa-product-title"><a
                                                                     href="#"> <?php the_title(); ?></a></h4>
@@ -327,12 +245,7 @@
                                                        title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
                                                     <a href="#" data-toggle="tooltip" data-placement="top"
                                                        title="Compare"><span class="fa fa-exchange"></span></a>
-<<<<<<< HEAD
-                                                    <a href="<?php the_permalink() ?>" data-toggle2="tooltip"
-                                                       data-placement="top"
-=======
                                                     <a href="<?php the_permalink() ?>" data-toggle2="tooltip" data-placement="top"
->>>>>>> d9124c772bf8a80a38d00d0d5c75b3446aa95d24
                                                        title="Quick View" data-toggle="modal"
                                                        data-target="#quick-view-modal"><span
                                                                 class="fa fa-search"></span></a>
