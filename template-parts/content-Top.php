@@ -53,8 +53,8 @@
                                                                     href="<?php the_permalink() ?>"
                                                                     rel="bookmark"> <?php the_title(); ?></a>
                                                         </h4>
-                                                        <span class="aa-product-price"><?php $price = get_post_meta(get_the_ID(), "price", true) ?>></span><span
-                                                                class="aa-product-price"><del>$65.50</del></span>
+                                                        <span class="aa-product-price">$<?php echo get_post_meta(get_the_ID(), '_regular_price', true); ?></span>
+                                                        <span class="aa-product-price"><del>$<?php echo get_post_meta(get_the_ID(), '_sale_price', true); ?></del></span>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="aa-product-hvr-content">
