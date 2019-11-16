@@ -128,11 +128,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="aa-footer-bottom-area">
-<<<<<<< HEAD
                         <p><a href="http://www.dawp.xyz/">dawp.xyz</a></p>
-=======
-                        <p><a href="http://www.markups.io/">dawp.xyz</a></p>
->>>>>>> d9124c772bf8a80a38d00d0d5c75b3446aa95d24
                         <div class="aa-footer-payment">
                             <span class="fa fa-cc-mastercard"></span>
                             <span class="fa fa-cc-visa"></span>
