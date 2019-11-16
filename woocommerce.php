@@ -48,11 +48,11 @@ do_action( 'newstore_before_shop');
 				</div>
 				<div class="clearfix"></div>
 			</main><!-- #main -->
-			<?php 
-				if($layout != 'full'){
-					get_sidebar($sidebar); 
-				}
-			?>
+<!--			--><?php //
+//				if($layout != 'full'){
+//					get_sidebar($sidebar);
+//				}
+//			?>
 		</div><!-- #primary -->
 	</div>
 </div>
