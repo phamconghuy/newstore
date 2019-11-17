@@ -18,10 +18,9 @@
                                 <!-- Start men product category -->
                                 <div class="tab-pane fade in active" id="dm1">
                                     <ul class="aa-product-catg">
-
                                         <!--Bắt đầu một sản phẩm-->
                                         <?php
-                                        $vnkings = new WP_Query(array(
+                                        $products = new WP_Query(array(
                                             'post_type'      => 'product',
                                             'post_status'    => 'publish',
                                             'tax_query'      => array(
@@ -35,10 +34,9 @@
                                             'order'          => 'ASC',
                                             'posts_per_page' => '8'));
                                         ?>
-                                        <?php while ($vnkings->have_posts()) :
-                                            $vnkings->the_post(); ?>
-
-                                            <!--                                            --><?php //the_title(); die();
+                                        <?php while ($products->have_posts()) :
+                                            $products->the_post(); ?>
+                                            <!----><?php //the_title(); die();
                                             ?>
                                             <li>
                                                 <figure>
@@ -70,15 +68,12 @@
                                             </li>
                                             <!-- Sản phẩm --><?php endwhile;
                                         wp_reset_query(); ?>
-
-
                                     </ul>
-                                    <a class="aa-browse-btn" href="#">Browse all Product <span
+                                    <a class="aa-browse-btn" href="#">Xem tất cả sản phẩm<span
                                                 class="fa fa-long-arrow-right"></span></a>
                                 </div>
                                 <!-- / men product category -->
                                 <!-- start women product category -->
-
                                 <!--ĐÓNG DANH MỤC SẢN PHẨM THỨ 2-->
                                 <div class="tab-pane fade" id="dm2">
                                     <a class="aa-browse-btn" href="#">Browse all Product <span
@@ -88,7 +83,7 @@
 
                                         <!--Bắt đầu một sản phẩm-->
                                         <?php
-                                        $vnkings = new WP_Query(array(
+                                        $products = new WP_Query(array(
                                             'post_type'      => 'product',
                                             'post_status'    => 'publish',
                                             'tax_query'      => array(
@@ -102,7 +97,7 @@
                                             'order'          => 'ASC',
                                             'posts_per_page' => '4'));
                                         ?>
-                                        <?php while ($vnkings->have_posts()) : $vnkings->the_post(); ?>
+                                        <?php while ($products->have_posts()) : $products->the_post(); ?>
 
 
                                             <li>
@@ -123,7 +118,8 @@
                                                        title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
                                                     <a href="#" data-toggle="tooltip" data-placement="top"
                                                        title="Compare"><span class="fa fa-exchange"></span></a>
-                                                    <a href="<?php the_permalink() ?>" data-toggle2="tooltip" data-placement="top"
+                                                    <a href="<?php the_permalink() ?>" data-toggle2="tooltip"
+                                                       data-placement="top"
                                                        title="Quick View" data-toggle="modal"
                                                        data-target="#quick-view-modal"><span
                                                                 class="fa fa-search"></span></a>
@@ -149,7 +145,7 @@
 
                                         <!--Bắt đầu một sản phẩm-->
                                         <?php
-                                        $vnkings = new WP_Query(array(
+                                        $products = new WP_Query(array(
                                             'post_type'      => 'product',
                                             'post_status'    => 'publish',
                                             'tax_query'      => array(
@@ -163,7 +159,7 @@
                                             'order'          => 'ASC',
                                             'posts_per_page' => '8'));
                                         ?>
-                                        <?php while ($vnkings->have_posts()) : $vnkings->the_post(); ?>
+                                        <?php while ($products->have_posts()) : $products->the_post(); ?>
 
 
                                             <li>
@@ -184,7 +180,8 @@
                                                        title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
                                                     <a href="#" data-toggle="tooltip" data-placement="top"
                                                        title="Compare"><span class="fa fa-exchange"></span></a>
-                                                    <a href="<?php the_permalink() ?>" data-toggle2="tooltip" data-placement="top"
+                                                    <a href="<?php the_permalink() ?>" data-toggle2="tooltip"
+                                                       data-placement="top"
                                                        title="Quick View" data-toggle="modal"
                                                        data-target="#quick-view-modal"><span
                                                                 class="fa fa-search"></span></a>
@@ -210,7 +207,7 @@
 
                                         <!--Bắt đầu một sản phẩm-->
                                         <?php
-                                        $vnkings = new WP_Query(array(
+                                        $products = new WP_Query(array(
                                             'post_type'      => 'product',
                                             'post_status'    => 'publish',
                                             'tax_query'      => array(
@@ -224,7 +221,7 @@
                                             'order'          => 'ASC',
                                             'posts_per_page' => '8'));
                                         ?>
-                                        <?php while ($vnkings->have_posts()) : $vnkings->the_post(); ?>
+                                        <?php while ($products->have_posts()) : $products->the_post(); ?>
 
 
                                             <li>
@@ -245,7 +242,8 @@
                                                        title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
                                                     <a href="#" data-toggle="tooltip" data-placement="top"
                                                        title="Compare"><span class="fa fa-exchange"></span></a>
-                                                    <a href="<?php the_permalink() ?>" data-toggle2="tooltip" data-placement="top"
+                                                    <a href="<?php the_permalink() ?>" data-toggle2="tooltip"
+                                                       data-placement="top"
                                                        title="Quick View" data-toggle="modal"
                                                        data-target="#quick-view-modal"><span
                                                                 class="fa fa-search"></span></a>
