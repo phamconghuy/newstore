@@ -26,18 +26,17 @@
                                             'tax_query'      => array(
                                                 array(
                                                     'taxonomy' => 'product_cat',
-                                                    'field'    => 'id',
-                                                    'terms'    => 'ID_Của_Danh_Mục_Sản_Phẩm'
+                                                    'field'    => 'slug',
+                                                    'terms'    => 'danh-muc-2'
                                                 )
                                             ),
                                             'orderby'        => 'ID',
                                             'order'          => 'ASC',
-                                            'posts_per_page' => '8'));
+                                            'posts_per_page' => '10'));
+
                                         ?>
                                         <?php while ($products->have_posts()) :
                                             $products->the_post(); ?>
-                                            <!----><?php //the_title(); die();
-                                            ?>
                                             <li>
                                                 <figure>
                                                     <a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?></a>
@@ -69,6 +68,7 @@
                                             <!-- Sản phẩm --><?php endwhile;
                                         wp_reset_query(); ?>
                                     </ul>
+
                                     <a class="aa-browse-btn" href="#">Xem tất cả sản phẩm<span
                                                 class="fa fa-long-arrow-right"></span></a>
                                 </div>
@@ -76,11 +76,8 @@
                                 <!-- start women product category -->
                                 <!--ĐÓNG DANH MỤC SẢN PHẨM THỨ 2-->
                                 <div class="tab-pane fade" id="dm2">
-                                    <a class="aa-browse-btn" href="#">Browse all Product <span
-                                                class="fa fa-long-arrow-right"></span></a>
                                     <ul class="aa-product-catg">
                                         <!-- start single product item -->
-
                                         <!--Bắt đầu một sản phẩm-->
                                         <?php
                                         $products = new WP_Query(array(
@@ -90,16 +87,14 @@
                                                 array(
                                                     'taxonomy' => 'product_cat',
                                                     'field'    => 'slug',
-                                                    'terms'    => 'danh-muc-1'
+                                                    'terms'    => 'danh-muc-2'
                                                 )
                                             ),
                                             'orderby'        => 'ID',
                                             'order'          => 'ASC',
-                                            'posts_per_page' => '4'));
+                                            'posts_per_page' => '10'));
                                         ?>
                                         <?php while ($products->have_posts()) : $products->the_post(); ?>
-
-
                                             <li>
                                                 <figure>
                                                     <a href="#"><?php the_post_thumbnail(); ?></a>
@@ -129,9 +124,7 @@
                                             </li>
                                             <!-- Sản phẩm --><?php endwhile;
                                         wp_reset_query(); ?>
-
                                         <!-- start single product item -->
-
                                     </ul>
                                 </div>
                                 <!--ĐÓNG DANH MỤC SẢN PHẨM THỨ 2-->

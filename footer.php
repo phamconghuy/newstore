@@ -75,13 +75,16 @@
                                 <div class="aa-footer-widget">
                                     <div class="aa-footer-widget">
                                         <h3>Danh mục</h3>
+                                        <?php
+                                        $args = array(
+                                            'taxonomy' => 'product_cat',
+                                        );
+                                        $categories = get_categories( $args );
+                                        foreach ( $categories as $category ) { ?>
                                         <ul class="aa-footer-nav">
-                                            <li><a href="#">Danh mục . . .</a></li>
-                                            <li><a href="#">Danh mục . . .</a></li>
-                                            <li><a href="#">Danh mục . . .</a></li>
-                                            <li><a href="#">Danh mục . . .</a></li>
-                                            <li><a href="#">Danh mục . . .</a></li>
+                                            <li><a href="<?php echo get_term_link($category->slug, 'product_cat');?>"><?php echo $category->name ; ?></a></li>
                                         </ul>
+                                        <?php } ?>
                                     </div>
                                 </div>
                             </div>
