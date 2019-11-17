@@ -32,7 +32,7 @@
                                             ),
                                             'orderby'        => 'ID',
                                             'order'          => 'ASC',
-                                            'posts_per_page' => '10'));
+                                            'posts_per_page' => '8'));
 
                                         ?>
                                         <?php while ($products->have_posts()) :
@@ -92,7 +92,7 @@
                                             ),
                                             'orderby'        => 'ID',
                                             'order'          => 'ASC',
-                                            'posts_per_page' => '10'));
+                                            'posts_per_page' => '8'));
                                         ?>
                                         <?php while ($products->have_posts()) : $products->the_post(); ?>
                                             <li>
@@ -246,9 +246,7 @@
                                             </li>
                                             <!-- Sản phẩm --><?php endwhile;
                                         wp_reset_query(); ?>
-
                                         <!-- start single product item -->
-
                                     </ul>
                                 </div>
                                 <!--ĐÓNG DANH MỤC SẢN PHẨM THỨ 4-->

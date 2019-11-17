@@ -24,11 +24,11 @@
                                         array(
                                             'taxonomy' => 'product_cat',
                                             'field'    => 'slug',
-                                            'terms'    => 'danh-muc-1'
+                                            'terms'    => 'danh-muc-2'
                                         )
                                     ),
                                     'orderby'        => 'ID',
-                                    'order'          => 'ASC',
+                                    'order'          => 'DESC',
                                     'posts_per_page' => '4'));
                                 ?>
                                 <ul class="aa-product-catg aa-popular-slider">
@@ -60,7 +60,6 @@
                                     <?php endwhile; wp_reset_query(); ?>
 
                                 </ul>
-
                                 <a class="aa-browse-btn" href="#">Browse all Product <span class="fa fa-long-arrow-right"></span></a>
                             </div>
                             <!-- / popular product category -->
