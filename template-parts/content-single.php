@@ -1,3 +1,4 @@
+<?php the_title( '<h2 class="entry-title post-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' ); ?>
 <article  id="post-<?php the_ID(); ?>"  <?php post_class("col-12 content-single"); ?>>
 	<div class="content-single-inner">
 		<?php if(has_post_thumbnail()): ?>
@@ -6,14 +7,13 @@
 		</div>
 		<?php endif; ?>
 		<div class="post-content">
-			<?php the_title( '<h2 class="entry-title post-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' ); ?>
+            <a href="<?php the_permalink() ?>"><p data-seq style="color: #000e14"><i><b><?php echo wp_trim_words($post ->post_excerpt);?></b></i></p></a>
 			<div class="entry-meta post-meta">
 				<?php do_action( 'newstore_post_index_meta'); ?>
 			</div>
 			<div class="entry-content">
 				<?php
 					the_content();
-
 					wp_link_pages( array(
 						'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'newstore' ),
 						'after'  => '</div>',

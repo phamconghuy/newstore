@@ -1,69 +1,31 @@
 <!-- Start slider -->
+<?php
+$posts = get_posts()
+?>
 <section id="aa-slider">
     <div class="aa-slider-area">
         <div id="sequence" class="seq">
             <div class="seq-screen">
                 <ul class="seq-canvas">
+                    <?php
+                    foreach ($posts as $key => $post)
+                    {
+                        ?>
                     <!-- single slide item -->
                     <li>
                         <div class="seq-model">
-                            <img data-seq src="<?php echo get_template_directory_uri(); ?>/assets/img/slider/1.jpg" alt="Men slide img" />
+                            <a href="<?php the_permalink() ?>"><img data-seq src="<?php the_post_thumbnail(); ?>" alt="Men slide img" /></a>
                         </div>
                         <div class="seq-title">
-                            <span data-seq>Save Up to 75% Off</span>
-                            <h2 data-seq>Men Collection</h2>
-                            <p data-seq>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, illum.</p>
-                            <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">SHOP NOW</a>
-                        </div>
+                            <a href="<?php the_permalink() ?>"><h2 data-seq><?php echo wp_trim_words($post ->post_title, '5') ;   ?></h2></a>
+                            <a href="<?php the_permalink() ?>"><p data-seq style="color: #000e14"><b><?php echo wp_trim_words($post ->post_excerpt, '15') ;   ?></b></p></a>
+                            <a data-seq href="http://www.dawp.xyz/DAWP/index.php/shop/" class="aa-shop-now-btn aa-secondary-btn">SHOP NOW</a>
+                        </div></a>
                     </li>
+            <?php
+            }
+            ?>
                     <!-- single slide item -->
-                    <li>
-                        <div class="seq-model">
-                            <img data-seq src="<?php echo get_template_directory_uri(); ?>/assets/img/slider/2.jpg" alt="Wristwatch slide img" />
-                        </div>
-                        <div class="seq-title">
-                            <span data-seq>Save Up to 40% Off</span>
-                            <h2 data-seq>Wristwatch Collection</h2>
-                            <p data-seq>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, illum.</p>
-                            <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">SHOP NOW</a>
-                        </div>
-                    </li>
-                    <!-- single slide item -->
-                    <li>
-                        <div class="seq-model">
-                            <img data-seq src="<?php echo get_template_directory_uri(); ?>/assets/img/slider/3.jpg" alt="Women Jeans slide img" />
-                        </div>
-                        <div class="seq-title">
-                            <span data-seq>Save Up to 75% Off</span>
-                            <h2 data-seq>Jeans Collection</h2>
-                            <p data-seq>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, illum.</p>
-                            <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">SHOP NOW</a>
-                        </div>
-                    </li>
-                    <!-- single slide item -->
-                    <li>
-                        <div class="seq-model">
-                            <img data-seq src="<?php echo get_template_directory_uri(); ?>/assets/img/slider/4.jpg" alt="Shoes slide img" />
-                        </div>
-                        <div class="seq-title">
-                            <span data-seq>Save Up to 75% Off</span>
-                            <h2 data-seq>Exclusive Shoes</h2>
-                            <p data-seq>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, illum.</p>
-                            <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">SHOP NOW</a>
-                        </div>
-                    </li>
-                    <!-- single slide item -->
-                    <li>
-                        <div class="seq-model">
-                            <img data-seq src="<?php echo get_template_directory_uri(); ?>/assets/img/slider/5.jpg" alt="Male Female slide img" />
-                        </div>
-                        <div class="seq-title">
-                            <span data-seq>Save Up to 50% Off</span>
-                            <h2 data-seq>Best Collection</h2>
-                            <p data-seq>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, illum.</p>
-                            <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">SHOP NOW</a>
-                        </div>
-                    </li>
                 </ul>
             </div>
             <!-- slider navigation btn -->

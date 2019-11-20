@@ -10,7 +10,6 @@ $layout_class = newstore_blog_layout();
 get_header();
 do_action( 'newstore_before_blog_post');
 ?>
-
 <div class="container-full space blog-post-single">
 	<div class="container">
 		<div id="primary" class="content-area row justify-content-center">
@@ -36,6 +35,5 @@ do_action( 'newstore_before_blog_post');
 		</div><!-- #primary -->
 	</div>
 </div>
-
 <?php
 get_footer();
