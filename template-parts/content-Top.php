@@ -41,7 +41,7 @@
                                             <li>
                                                 <figure>
                                                     <a href="<?php the_permalink() ?>"></a>
-                                                    <?php echo get_the_post_thumbnail( get_the_id(), 'cat-thumb', array( 'class' =>'thumnail') ); ?>
+                                                    <?php echo get_the_post_thumbnail( get_the_id(), 'cat-thumb' ); ?>
                                                     <a class="aa-add-card-btn "
                                                        href="?add-to-cart=<?php the_ID(); ?>"><span
                                                                 class="fa fa-shopping-cart"></span>Mua Ngay
