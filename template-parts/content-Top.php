@@ -41,7 +41,7 @@
                                             <li>
                                                 <figure>
                                                     <a href="<?php the_permalink() ?>"></a>
-                                                    <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>" alt="sss">
+                                                    <?php echo get_the_post_thumbnail( get_the_id(), 'cat-thumb', array( 'class' =>'thumnail') ); ?>
                                                     <a class="aa-add-card-btn "
                                                        href="?add-to-cart=<?php the_ID(); ?>"><span
                                                                 class="fa fa-shopping-cart"></span>Mua Ngay

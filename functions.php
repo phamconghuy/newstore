@@ -43,7 +43,11 @@ if ( ! function_exists( 'newstore_setup' ) ) :
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
 		add_theme_support( 'post-thumbnails' );
-
+        add_action( 'after_setup_theme', 'wpdocs_theme_setup' );
+        function wpdocs_theme_setup() {
+            add_image_size( 'home-thumb', 270, 250);
+            add_image_size( 'cat-thumb', 250, 300);
+        }
         // This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'primary' => esc_html__( 'Primary', 'newstore' ),
