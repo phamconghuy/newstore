@@ -41,7 +41,7 @@
                                             <li>
                                                 <figure>
                                                     <a href="<?php the_permalink() ?>">
-                                                    <?php the_post_thumbnail(); ?></a>
+                                                    <?php the_post_thumbnail('shopviet-smallimage'); ?></a>
                                                     <a class="aa-add-card-btn "
                                                        href="?add-to-cart=<?php the_ID(); ?>"><span
                                                                 class="fa fa-shopping-cart"></span>Mua Ngay
