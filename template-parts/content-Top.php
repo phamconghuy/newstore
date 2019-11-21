@@ -30,7 +30,8 @@
                                                     'terms'    => 'danh-muc-2'
                                                 )
                                             ),
-                                            'orderby'        => 'ID',
+                                            // products orderby="date" order="desc"  lấy sản phẩm mới nhất
+                                           'orderby'        => 'ID',
                                             'order'          => 'ASC',
                                             'posts_per_page' => '8'));
 
@@ -43,7 +44,6 @@
                                                     <a class="aa-add-card-btn "
                                                        href="?add-to-cart=<?php the_ID(); ?>"><span
                                                                 class="fa fa-shopping-cart"></span>Mua Ngay
-
                                                     </a>
                                                     <figcaption>
                                                         <h4 class="aa-product-title"><a
