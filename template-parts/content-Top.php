@@ -40,8 +40,8 @@
                                             $product->the_post(); ?>
                                             <li>
                                                 <figure>
-                                                    <a href="<?php the_permalink() ?>"></a>
-                                                    <?php echo get_the_post_thumbnail( get_the_id(), 'cat-thumb' ); ?>
+                                                    <a href="<?php the_permalink() ?>">
+                                                    <?php echo get_the_post_thumbnail( get_the_id(), 'cat-thumb' ); ?></a>
                                                     <a class="aa-add-card-btn "
                                                        href="?add-to-cart=<?php the_ID(); ?>"><span
                                                                 class="fa fa-shopping-cart"></span>Mua Ngay
