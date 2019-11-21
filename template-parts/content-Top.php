@@ -20,7 +20,7 @@
                                     <ul class="aa-product-catg">
                                         <!--Bắt đầu một sản phẩm-->
                                         <?php
-                                        $products = new WP_Query(array(
+                                        $product = new WP_Query(array(
                                             'post_type'      => 'product',
                                             'post_status'    => 'publish',
                                             'tax_query'      => array(
@@ -36,14 +36,15 @@
                                             'posts_per_page' => '8'));
 
                                         ?>
-                                        <?php while ($products->have_posts()) :
-                                            $products->the_post(); ?>
+                                        <?php while ($product->have_posts()) :
+                                            $product->the_post(); ?>
                                             <li>
                                                 <figure>
                                                     <a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?></a>
                                                     <a class="aa-add-card-btn "
                                                        href="?add-to-cart=<?php the_ID(); ?>"><span
                                                                 class="fa fa-shopping-cart"></span>Mua Ngay
+
                                                     </a>
                                                     <figcaption>
                                                         <h4 class="aa-product-title"><a
@@ -64,6 +65,7 @@
                                                 </div>
                                                 <!-- product badge -->
                                                 <span class="aa-badge aa-sale" href="#">SALE!</span>
+                                                <p><?php  ?></p>
                                             </li>
                                             <!-- Sản phẩm --><?php endwhile;
                                         wp_reset_query(); ?>
@@ -80,7 +82,7 @@
                                         <!-- start single product item -->
                                         <!--Bắt đầu một sản phẩm-->
                                         <?php
-                                        $products = new WP_Query(array(
+                                        $product = new WP_Query(array(
                                             'post_type'      => 'product',
                                             'post_status'    => 'publish',
                                             'tax_query'      => array(
@@ -94,7 +96,7 @@
                                             'order'          => 'ASC',
                                             'posts_per_page' => '8'));
                                         ?>
-                                        <?php while ($products->have_posts()) : $products->the_post(); ?>
+                                        <?php while ($product->have_posts()) : $product->the_post(); ?>
                                             <li>
                                                 <figure>
                                                     <a href="#"><?php the_post_thumbnail(); ?></a>
@@ -138,7 +140,7 @@
 
                                         <!--Bắt đầu một sản phẩm-->
                                         <?php
-                                        $products = new WP_Query(array(
+                                        $product = new WP_Query(array(
                                             'post_type'      => 'product',
                                             'post_status'    => 'publish',
                                             'tax_query'      => array(
@@ -152,7 +154,7 @@
                                             'order'          => 'ASC',
                                             'posts_per_page' => '8'));
                                         ?>
-                                        <?php while ($products->have_posts()) : $products->the_post(); ?>
+                                        <?php while ($product->have_posts()) : $product->the_post(); ?>
 
 
                                             <li>
@@ -200,7 +202,7 @@
 
                                         <!--Bắt đầu một sản phẩm-->
                                         <?php
-                                        $products = new WP_Query(array(
+                                        $product = new WP_Query(array(
                                             'post_type'      => 'product',
                                             'post_status'    => 'publish',
                                             'tax_query'      => array(
@@ -214,7 +216,7 @@
                                             'order'          => 'ASC',
                                             'posts_per_page' => '8'));
                                         ?>
-                                        <?php while ($products->have_posts()) : $products->the_post(); ?>
+                                        <?php while ($product->have_posts()) : $product->the_post(); ?>
 
 
                                             <li>
