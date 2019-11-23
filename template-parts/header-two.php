@@ -118,8 +118,8 @@
                             <!-- Left nav -->
                             <ul class="nav navbar-nav">
                                 <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">TRANG CHỦ</a></li>
-                                <li><a href="http://www.dawp.xyz/index.php/shop/">CỬA HÀNG<span class="caret"></span></a> </li>
-                                <li><a href="http://www.dawp.xyz/index.php/checkout/">THANH TOÁN <span class="caret"></span></a></li>
+                                <li><a href="http://www.dawp.xyz/DAWP/index.php/shop/">CỬA HÀNG<span class="caret"></span></a> </li>
+                                <li><a href="http://www.dawp.xyz/DAWP/index.php/checkout/">THANH TOÁN <span class="caret"></span></a></li>
                                 <li><a href="#">LIÊN HỆ <span class="caret"></span></a> </li>
                                 <li><a href="#">GIỚI THIỆU</a></li>
                             </ul>
