@@ -10,8 +10,9 @@
                             <div class="aa-promo-left">
                                 <?php
                                 $args = array(
-                                    'taxonomy' => 'product_cat',
-                                    'orderby'  => 'id',
+                                    'hide_empty' => 0,
+                                    'taxonomy'   => 'product_cat',
+                                    'orderby'    => 'id',
                                 );
                                 $categories = get_categories($args);
 
@@ -24,7 +25,8 @@
                                                 <div class="aa-prom-content">
                                                     <span><?php echo $category->name; ?></span>
                                                     <h4>
-                                                        <?php echo $category->name; echo $category->term_id;
+                                                        <?php echo $category->name;
+                                                        echo $category->term_id;
                                                         ?>
                                                     </h4>
                                                 </div>
