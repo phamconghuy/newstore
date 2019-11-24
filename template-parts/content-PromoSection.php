@@ -16,8 +16,8 @@
                                 $categories = get_categories($args);
 
                                     foreach ($categories as $key => $category) {
-                                        $add = mt_rand(20,27);
-                                if ($category->term_id == $add) {
+                                        $add = mt_rand(22,27);
+                                if ($category->term_id == $add) { echo $category->term_id
                                     ?>
                                     <a href="<?php echo get_term_link($category->slug, 'product_cat'); ?>">
                                         <div class="aa-promo-banner">
@@ -25,7 +25,10 @@
                                             <div class="aa-prom-content">
                                             <span><?php echo $category->name;?></span>
                                                 <h4>
-                                                    <?php echo $category->name; ?>
+
+                                                    <?php echo $category->name;
+
+                                                    ?>
                                                 </h4>
                                             </div>
                                         </div>
