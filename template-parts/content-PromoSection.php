@@ -15,6 +15,8 @@
                                 );
                                 $categories = get_categories($args);
                                 foreach ($categories as $key => $category) {
+
+                                    if ($key = 2) {
                                         ?>
                                         <a href="<?php echo get_term_link($category->slug, 'product_cat'); ?>">
                                             <div class="aa-promo-banner">
@@ -28,6 +30,7 @@
                                             </div>
                                         </a>
                                         <?php
+                                    }
                                 }
                                 ?>
                             </div>
