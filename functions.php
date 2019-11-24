@@ -293,3 +293,16 @@ if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/class-newstore-wc-widget-products.php';
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+add_action( 'woocommerce_archive_description', 'woocommerce_category_image', 2 );
+function woocommerce_category_image() {
+    if ( is_product_category() ){
+        global $wp_query;
+        $cat = $wp_query->get_queried_object();
+        $thumbnail_id = get_term_meta( $cat->term_id, 'thumbnail_id', true );
+        $image = wp_get_attachment_url( $thumbnail_id );
+        if ( $image ) {
+            echo '<img style="margin: 0px 10px 10px 0px;" class="category-image" src="' . $image . '" alt="" />';
+        }
+    }
+}
+

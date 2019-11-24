@@ -8,54 +8,59 @@
                         <!-- promo left -->
                         <div class="col-md-5 no-padding">
                             <div class="aa-promo-left">
-                                <div class="aa-promo-banner">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/promo-banner-1.jpg" alt="img">
-                                    <div class="aa-prom-content">
-                                        <span>75% Off</span>
-                                        <h4><a href="#">For Women</a></h4>
-                                    </div>
-                                </div>
+                                <?php
+                                $args = array(
+                                    'taxonomy' => 'product_cat',
+                                    'orderby'  => 'id',
+                                );
+                                $categories = get_categories($args);
+                                foreach ($categories as $key => $category) {
+                                    $idd = mt_rand(0, 6);
+                                    if ($key = $idd) {
+                                        ?>
+                                        <a href="<?php echo get_term_link($category->slug, 'product_cat'); ?>">
+                                            <div class="aa-promo-banner">
+                                                <?php woocommerce_subcategory_thumbnail($category); ?>
+                                                <div class="aa-prom-content">
+                                                    <span><?php echo $category->name ?></span>
+                                                    <h4>
+                                                        <?php echo $category->name; ?>
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <?php
+                                    }
+                                }
+                                ?>
                             </div>
                         </div>
                         <!-- promo right -->
                         <div class="col-md-7 no-padding">
                             <div class="aa-promo-right">
-                                <div class="aa-single-promo-right">
-                                    <div class="aa-promo-banner">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/promo-banner-3.jpg" alt="img">
-                                        <div class="aa-prom-content">
-                                            <span>Exclusive Item</span>
-                                            <h4><a href="#">For Men</a></h4>
+                                <?php
+                                $args = array(
+                                    'hide_empty' => 0,
+                                    'taxonomy'   => 'product_cat',
+                                    'orderby'    => 'id',
+                                    'number'     => 4,
+                                );
+                                $categories = get_categories($args);
+                                foreach ($categories as $category) { ?>
+                                    <div class="aa-single-promo-right">
+                                        <div class="aa-promo-banner">
+                                            <?php woocommerce_subcategory_thumbnail($category); ?>
+                                            <div class="aa-prom-content">
+                                                <span><?php echo $category->name ?></span>
+                                                <h4>
+                                                    <a href="<?php echo get_term_link($category->slug, 'product_cat'); ?>"><?php echo $category->name; ?></a>
+                                                </h4>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="aa-single-promo-right">
-                                    <div class="aa-promo-banner">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/promo-banner-2.jpg" alt="img">
-                                        <div class="aa-prom-content">
-                                            <span>Sale Off</span>
-                                            <h4><a href="#">On Shoes</a></h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="aa-single-promo-right">
-                                    <div class="aa-promo-banner">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/promo-banner-4.jpg" alt="img">
-                                        <div class="aa-prom-content">
-                                            <span>New Arrivals</span>
-                                            <h4><a href="#">For Kids</a></h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="aa-single-promo-right">
-                                    <div class="aa-promo-banner">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/promo-banner-5.jpg" alt="img">
-                                        <div class="aa-prom-content">
-                                            <span>25% Off</span>
-                                            <h4><a href="#">For Bags</a></h4>
-                                        </div>
-                                    </div>
-                                </div>
+                                    <?php
+
+                                } ?>
                             </div>
                         </div>
                     </div>

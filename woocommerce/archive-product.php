@@ -41,8 +41,9 @@ do_action( 'woocommerce_before_main_content' );
 	 * @hooked woocommerce_taxonomy_archive_description - 10
 	 * @hooked woocommerce_product_archive_description - 10
 	 */
-	do_action( 'woocommerce_archive_description' );
+	add_action( 'woocommerce_archive_description');
 	?>
+
 </header>
 <?php
 if ( woocommerce_product_loop() ) {
@@ -103,3 +104,4 @@ do_action( 'woocommerce_after_main_content' );
 do_action( 'woocommerce_sidebar' );
 
 get_footer( 'shop' );
+

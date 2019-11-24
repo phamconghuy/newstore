@@ -76,16 +76,20 @@
                                     <div class="aa-footer-widget">
                                         <h3>Danh mục</h3>
                                         <?php
+
                                         $args = array(
-                                            'post_type'=>'product',
+                                            'hide_empty' => 0,
                                             'taxonomy' => 'product_cat',
+                                            'orderby' => 'id',
                                         );
                                         $categories = get_categories( $args );
                                         foreach ( $categories as $category ) { ?>
                                         <ul class="aa-footer-nav">
                                             <li><a href="<?php echo get_term_link($category->slug, 'product_cat');?>"><?php echo $category->name ; ?></a></li>
                                         </ul>
-                                        <?php } ?>
+                                        <?php
+//                                            woocommerce_subcategory_thumbnail( $category );
+                                        } ?>
                                     </div>
                                 </div>
                             </div>

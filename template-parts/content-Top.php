@@ -31,7 +31,7 @@
                                                 )
                                             ),
                                             // products orderby="date" order="desc"  lấy sản phẩm mới nhất
-                                           'orderby'        => 'ID',
+                                            'orderby'        => 'ID',
                                             'order'          => 'ASC',
                                             'posts_per_page' => '8'));
 
@@ -41,7 +41,7 @@
                                             <li>
                                                 <figure>
                                                     <a href="<?php the_permalink() ?>">
-                                                    <?php the_post_thumbnail('shopviet-smallimage'); ?></a>
+                                                        <?php the_post_thumbnail('shopviet-smallimage'); ?></a>
                                                     <a class="aa-add-card-btn "
                                                        href="?add-to-cart=<?php the_ID(); ?>"><span
                                                                 class="fa fa-shopping-cart"></span>Mua Ngay
@@ -49,7 +49,8 @@
                                                     </a>
                                                     <figcaption>
                                                         <h4 class="aa-product-title">
-                                                            <a href="<?php the_permalink() ?>"rel="bookmark"> <?php the_title(); ?>
+                                                            <a href="<?php the_permalink() ?>"
+                                                               rel="bookmark"> <?php the_title(); ?>
                                                             </a>
                                                         </h4>
                                                         <span class="aa-product-price">$<?php echo get_post_meta(get_the_ID(), '_regular_price', true); ?></span>
@@ -66,7 +67,7 @@
                                                 </div>
                                                 <!-- product badge -->
                                                 <span class="aa-badge aa-sale" href="#">SALE!</span>
-                                                <p><?php  ?></p>
+                                                <p><?php ?></p>
                                             </li>
                                             <!-- Sản phẩm --><?php endwhile;
                                         wp_reset_query(); ?>
