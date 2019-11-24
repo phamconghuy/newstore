@@ -15,27 +15,23 @@
                                 );
                                 $categories = get_categories($args);
 
-                                    foreach ($categories as $key => $category) {
-                                        $add = mt_rand(22,27);
-                                if ($category->term_id == $add) { echo $category->term_id
-                                    ?>
-                                    <a href="<?php echo get_term_link($category->slug, 'product_cat'); ?>">
-                                        <div class="aa-promo-banner">
-                                            <?php woocommerce_subcategory_thumbnail($category); ?>
-                                            <div class="aa-prom-content">
-                                            <span><?php echo $category->name;?></span>
-                                                <h4>
-
-                                                    <?php echo $category->name;
-
-                                                    ?>
-                                                </h4>
+                                foreach ($categories as $key => $category) {
+                                    if ($category->term_id == 24) {
+                                        ?>
+                                        <a href="<?php echo get_term_link($category->slug, 'product_cat'); ?>">
+                                            <div class="aa-promo-banner">
+                                                <?php woocommerce_subcategory_thumbnail($category); ?>
+                                                <div class="aa-prom-content">
+                                                    <span><?php echo $category->name; ?></span>
+                                                    <h4>
+                                                        <?php echo $category->name;
+                                                        ?>
+                                                    </h4>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </a>
-                                    <?php
-                                }
-                                $key++;
+                                        </a>
+                                        <?php
+                                    }
                                 }
                                 ?>
                             </div>
@@ -52,18 +48,19 @@
                                 );
                                 $categories = get_categories($args);
                                 foreach ($categories as $category) { ?>
-                                <a href="<?php echo get_term_link($category->slug, 'product_cat'); ?>">
-                                    <div class="aa-single-promo-right">
-                                        <div class="aa-promo-banner">
-                                            <?php woocommerce_subcategory_thumbnail($category); ?>
-                                            <div class="aa-prom-content">
-                                                <span><?php echo $category->name ?></span>
-                                                <h4>
-                                                    <?php echo $category->name; ?>
-                                                </h4>
+                                    <a href="<?php echo get_term_link($category->slug, 'product_cat'); ?>">
+                                        <div class="aa-single-promo-right">
+                                            <div class="aa-promo-banner">
+                                                <?php woocommerce_subcategory_thumbnail($category); ?>
+                                                <div class="aa-prom-content">
+                                                    <span><?php echo $category->name ?></span>
+                                                    <h4>
+                                                        <?php echo $category->name; ?>
+                                                    </h4>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div></a>
+                                    </a>
                                     <?php
 
                                 } ?>
