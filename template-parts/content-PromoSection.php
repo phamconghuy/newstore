@@ -17,7 +17,8 @@
                                 $categories = get_categories($args);
 
                                 foreach ($categories as $category) {
-                                    if ($category->term_id == 24) {
+                                    $add = mt_rand(22,27);
+                                    if ($category->term_id == $add) {
                                         ?>
                                         <a href="<?php echo get_term_link($category->slug, 'product_cat'); ?>">
                                             <div class="aa-promo-banner">
