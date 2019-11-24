@@ -15,8 +15,6 @@
                                 );
                                 $categories = get_categories($args);
                                 foreach ($categories as $key => $category) {
-                                    $idd = mt_rand(0, 6);
-                                    if ($key = $idd) {
                                         ?>
                                         <a href="<?php echo get_term_link($category->slug, 'product_cat'); ?>">
                                             <div class="aa-promo-banner">
@@ -30,7 +28,6 @@
                                             </div>
                                         </a>
                                         <?php
-                                    }
                                 }
                                 ?>
                             </div>
@@ -47,17 +44,18 @@
                                 );
                                 $categories = get_categories($args);
                                 foreach ($categories as $category) { ?>
+                                <a href="<?php echo get_term_link($category->slug, 'product_cat'); ?>">
                                     <div class="aa-single-promo-right">
                                         <div class="aa-promo-banner">
                                             <?php woocommerce_subcategory_thumbnail($category); ?>
                                             <div class="aa-prom-content">
                                                 <span><?php echo $category->name ?></span>
                                                 <h4>
-                                                    <a href="<?php echo get_term_link($category->slug, 'product_cat'); ?>"><?php echo $category->name; ?></a>
+                                                    <?php echo $category->name; ?>
                                                 </h4>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div></a>
                                     <?php
 
                                 } ?>
