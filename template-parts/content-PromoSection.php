@@ -15,9 +15,8 @@
                                     'orderby'    => 'id',
                                 );
                                 $categories = get_categories($args);
-
+                                $add = mt_rand(22,27);
                                 foreach ($categories as $category) {
-                                    $add = mt_rand(22,27);
                                     if ($category->term_id == $add) {
                                         ?>
                                         <a href="<?php echo get_term_link($category->slug, 'product_cat'); ?>">
