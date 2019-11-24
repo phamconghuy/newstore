@@ -15,7 +15,7 @@
                                 );
                                 $categories = get_categories($args);
 
-                                foreach ($categories as $key => $category) {
+                                foreach ($categories as $category) {
                                     if ($category->term_id == 24) {
                                         ?>
                                         <a href="<?php echo get_term_link($category->slug, 'product_cat'); ?>">
@@ -24,7 +24,7 @@
                                                 <div class="aa-prom-content">
                                                     <span><?php echo $category->name; ?></span>
                                                     <h4>
-                                                        <?php echo $category->name;
+                                                        <?php echo $category->name; echo $category->term_id;
                                                         ?>
                                                     </h4>
                                                 </div>
