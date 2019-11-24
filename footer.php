@@ -77,6 +77,7 @@
                                         <h3>Danh mục</h3>
                                         <?php
                                         $args = array(
+                                            'post_type'=>'product',
                                             'taxonomy' => 'product_cat',
                                         );
                                         $categories = get_categories( $args );
