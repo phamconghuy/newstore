@@ -91,7 +91,7 @@
                                                 array(
                                                     'taxonomy' => 'product_cat',
                                                     'field'    => 'slug',
-                                                    'terms'    => 'da-xay'
+                                                    'terms'    => 'che'
                                                 )
                                             ),
                                             'orderby'        => 'ID',
@@ -149,7 +149,7 @@
                                                 array(
                                                     'taxonomy' => 'product_cat',
                                                     'field'    => 'slug',
-                                                    'terms'    => 'che'
+                                                    'terms'    => 'da-xay'
                                                 )
                                             ),
                                             'orderby'        => 'ID',
