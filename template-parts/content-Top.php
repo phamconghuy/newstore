@@ -8,10 +8,10 @@
                         <div class="aa-product-inner">
                             <!-- start prduct navigation -->
                             <ul class="nav nav-tabs aa-products-tab">
-                                <li class="active"><a href="#dm1" data-toggle="tab">Danh mục 1</a></li>
-                                <li><a href="#dm2" data-toggle="tab">Danh mục 2</a></li>
-                                <li><a href="#dm3" data-toggle="tab">Danh mục 3</a></li>
-                                <li><a href="#dm4" data-toggle="tab">Danh mục 4</a></li>
+                                <li class="active"><a href="#dm1" data-toggle="tab">Đồ Ăn vặt</a></li>
+                                <li><a href="#dm2" data-toggle="tab">Chè </a></li>
+                                <li><a href="#dm3" data-toggle="tab">Đá Bào</a></li>
+                                <li><a href="#dm4" data-toggle="tab">Cà Phê</a></li>
                             </ul>
                             <!-- Tab panes -->
                             <div class="tab-content">
@@ -27,7 +27,7 @@
                                                 array(
                                                     'taxonomy' => 'product_cat',
                                                     'field'    => 'slug',
-                                                    'terms'    => 'danh-muc-2'
+                                                    'terms'    => 'do-an-vat'
                                                 )
                                             ),
                                             // products orderby="date" order="desc"  lấy sản phẩm mới nhất
@@ -91,7 +91,7 @@
                                                 array(
                                                     'taxonomy' => 'product_cat',
                                                     'field'    => 'slug',
-                                                    'terms'    => 'danh-muc-2'
+                                                    'terms'    => 'da-xay'
                                                 )
                                             ),
                                             'orderby'        => 'ID',
@@ -148,8 +148,8 @@
                                             'tax_query'      => array(
                                                 array(
                                                     'taxonomy' => 'product_cat',
-                                                    'field'    => 'id',
-                                                    'terms'    => '22'
+                                                    'field'    => 'slug',
+                                                    'terms'    => 'che'
                                                 )
                                             ),
                                             'orderby'        => 'ID',
@@ -210,8 +210,8 @@
                                             'tax_query'      => array(
                                                 array(
                                                     'taxonomy' => 'product_cat',
-                                                    'field'    => 'id',
-                                                    'terms'    => '21'
+                                                    'field'    => 'slug',
+                                                    'terms'    => 'ca_phe'
                                                 )
                                             ),
                                             'orderby'        => 'ID',
