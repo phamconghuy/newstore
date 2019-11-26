@@ -11,28 +11,28 @@
 
 ?>
 
-	</div><!-- #content -->
-	<footer id="colophon" class="site-footer footer">
-		<?php if ( is_active_sidebar( 'footer-widget-area-col-1') ||is_active_sidebar( 'footer-widget-area-col-2') ||is_active_sidebar( 'footer-widget-area-col-3') ||is_active_sidebar( 'footer-widget-area-col-4')): ?>
-		<div class="footer-widgets">
-			<div class="container">
-				<div class="row">
-					<?php
-						for ($i=1; $i <= 4; $i++){
-							if (is_active_sidebar( 'footer-widget-area-col-'.$i) ){
-								echo '<div class="footer-widget-column col-md-3 col-sm-6">';
-								dynamic_sidebar( 'footer-widget-area-col-'.$i);
-								echo '</div>';
-							}
-						}
-					?>
-				</div>
-			</div>
-		</div>
-		<?php endif; ?>
-		<a href="#" id="scroll-top" style="display: none;"><i class="fa fa-angle-up"></i></a>
-	</footer><!-- #colophon -->
-	<section id="aa-subscribe">
+</div><!-- #content -->
+<footer id="colophon" class="site-footer footer">
+    <?php if (is_active_sidebar('footer-widget-area-col-1') || is_active_sidebar('footer-widget-area-col-2') || is_active_sidebar('footer-widget-area-col-3') || is_active_sidebar('footer-widget-area-col-4')): ?>
+        <div class="footer-widgets">
+            <div class="container">
+                <div class="row">
+                    <?php
+                    for ($i = 1; $i <= 4; $i++) {
+                        if (is_active_sidebar('footer-widget-area-col-' . $i)) {
+                            echo '<div class="footer-widget-column col-md-3 col-sm-6">';
+                            dynamic_sidebar('footer-widget-area-col-' . $i);
+                            echo '</div>';
+                        }
+                    }
+                    ?>
+                </div>
+            </div>
+        </div>
+    <?php endif; ?>
+    <a href="#" id="scroll-top" style="display: none;"><i class="fa fa-angle-up"></i></a>
+</footer><!-- #colophon -->
+<section id="aa-subscribe">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -79,15 +79,18 @@
 
                                         $args = array(
                                             'hide_empty' => 0,
-                                            'taxonomy' => 'product_cat',
-                                            'orderby' => 'id',
+                                            'taxonomy'   => 'product_cat',
+                                            'orderby'    => 'id',
+                                            'number'     => '5',
                                         );
-                                        $categories = get_categories( $args );
-                                        foreach ( $categories as $category ) { ?>
-                                        <ul class="aa-footer-nav">
-                                            <li><a href="<?php echo get_term_link($category->slug, 'product_cat');?>"><?php echo $category->name ; ?></a></li>
-                                        </ul>
-                                        <?php
+                                        $categories = get_categories($args);
+                                        foreach ($categories as $category) { ?>
+                                            <ul class="aa-footer-nav">
+                                                <li>
+                                                    <a href="<?php echo get_term_link($category->slug, 'product_cat'); ?>"><?php echo $category->name; ?></a>
+                                                </li>
+                                            </ul>
+                                            <?php
 //                                            woocommerce_subcategory_thumbnail( $category );
                                         } ?>
                                     </div>
@@ -147,13 +150,13 @@
                             <div class="container">
                                 <span class="copy-text" style="color: #777">
                                 <?php
-                                printf(esc_html__( 'Copyright &copy; %1$s %2$s All Right Reserved.', 'newstore' ), esc_html(date_i18n(__('Y', 'newstore'))), get_bloginfo( 'name', 'display'));
+                                printf(esc_html__('Copyright &copy; %1$s %2$s All Right Reserved.', 'newstore'), esc_html(date_i18n(__('Y', 'newstore'))), get_bloginfo('name', 'display'));
                                 ?>
                                 </span>
                                 <span class="sep" style="color: #777">|
                                 <?php
                                 /* translators: 1: Theme name, 2: Theme author. */
-                                printf( esc_html__( 'Theme: %1$s by %2$s', 'newstore' ), '<a href="'.esc_url('https://themefarmer.com/free-themes/newstore/').'" tyle="color: #777" >DAWP</a>', 'ThemeFarmer' );
+                                printf(esc_html__('Theme: %1$s by %2$s', 'newstore'), '<a href="' . esc_url('https://themefarmer.com/free-themes/newstore/') . '" tyle="color: #777" >DAWP</a>', 'ThemeFarmer');
                                 ?></span>
                             </div>
                         </div>
@@ -178,7 +181,8 @@
                     <label for="">Password<span>*</span></label>
                     <input type="password" placeholder="Password">
                     <button class="aa-browse-btn" type="submit">Đăng nhập</button>
-                    <label for="rememberme" class="rememberme"><input type="checkbox" id="rememberme"> Nhớ mật khẩu </label>
+                    <label for="rememberme" class="rememberme"><input type="checkbox" id="rememberme"> Nhớ mật khẩu
+                    </label>
                     <p class="aa-lost-password"><a href="#">Quên mật khẩu ?</a></p>
                     <div class="aa-register-now">
                         Không có tài khoản ?<a href="account.html">Đăng ký!</a>
@@ -196,15 +200,19 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/bootstrap.js"></script>
 <!-- SmartMenus jQuery plugin -->
-<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.smartmenus.js"></script>
+<script type="text/javascript"
+        src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.smartmenus.js"></script>
 <!-- SmartMenus jQuery Bootstrap Addon -->
-<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.smartmenus.bootstrap.js"></script>
+<script type="text/javascript"
+        src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.smartmenus.bootstrap.js"></script>
 <!-- To Slider JS -->
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/sequence.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/sequence-theme.modern-slide-in.js"></script>
 <!-- Product view slider -->
-<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.simpleGallery.js"></script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.simpleLens.js"></script>
+<script type="text/javascript"
+        src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.simpleGallery.js"></script>
+<script type="text/javascript"
+        src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.simpleLens.js"></script>
 <!-- slick slider -->
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/slick.js"></script>
 <!-- Price picker slider -->
