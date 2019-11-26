@@ -25,9 +25,7 @@
                                                 <div class="aa-prom-content">
                                                     <span><?php echo $category->name; ?></span>
                                                     <h4>
-                                                        <?php echo $category->name;
-                                                        echo $category->term_id;
-                                                        ?>
+                                                        <?php echo $category->name; ?>
                                                     </h4>
                                                 </div>
                                             </div>
