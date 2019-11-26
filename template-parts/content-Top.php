@@ -62,7 +62,7 @@
                                                     <a href="#" data-toggle="tooltip" data-placement="top"
                                                        title="Compare"><span class="fa fa-exchange"></span></a>
                                                     <a href="<?php the_permalink() ?>"><span
-                                                                class="fa fa-search">View</span></a>
+                                                                class="fa fa-search">Xem thêm</span></a>
                                                 </div>
                                                 <!-- product badge -->
                                                 <p><?php ?></p>
@@ -71,15 +71,12 @@
                                         wp_reset_query(); ?>
                                     </ul>
 
-                                    <a class="aa-browse-btn" href="#">Xem tất cả sản phẩm<span
+                                    <a class="aa-browse-btn" href="http://www.dawp.xyz/index.php/product-category/do-an-vat/">Xem tất cả sản phẩm<span
                                                 class="fa fa-long-arrow-right"></span></a>
                                 </div>
-                                <!-- / men product category -->
-                                <!-- start women product category -->
                                 <!--ĐÓNG DANH MỤC SẢN PHẨM THỨ 2-->
                                 <div class="tab-pane fade" id="dm2">
                                     <ul class="aa-product-catg">
-                                        <!-- start single product item -->
                                         <!--Bắt đầu một sản phẩm-->
                                         <?php
                                         $product = new WP_Query(array(
@@ -102,7 +99,7 @@
                                                     <a href="#"><?php the_post_thumbnail(); ?></a>
                                                     <a class="aa-add-card-btn"
                                                        href="<?php the_permalink() ?>"><span
-                                                                class="fa fa-shopping-cart"></span>Add To Cart</a>
+                                                                class="fa fa-shopping-cart"></span>Mua ngay</a>
                                                     <figcaption>
                                                         <h4 class="aa-product-title"><a
                                                                     href="#"> <?php the_title(); ?></a></h4>
@@ -120,22 +117,21 @@
                                                        data-target="#quick-view-modal"><span
                                                                 class="fa fa-search"></span></a>
                                                 </div>
-                                                <!-- product badge -->
                                             </li>
                                             <!-- Sản phẩm --><?php endwhile;
                                         wp_reset_query(); ?>
                                         <!-- start single product item -->
                                     </ul>
+                                    <a class="aa-browse-btn" href="http://www.dawp.xyz/index.php/product-category/che/">Xem sản phẩm <span
+                                                class="fa fa-long-arrow-right"></span></a>
                                 </div>
                                 <!--ĐÓNG DANH MỤC SẢN PHẨM THỨ 2-->
 
                                 <!--ĐÓNG DANH MỤC SẢN PHẨM THỨ 3-->
                                 <div class="tab-pane fade" id="dm3">
-                                    <a class="aa-browse-btn" href="#">Browse all Product <span
+                                    <a class="aa-browse-btn" href="#">Xem sản phẩm <span
                                                 class="fa fa-long-arrow-right"></span></a>
                                     <ul class="aa-product-catg">
-                                        <!-- start single product item -->
-
                                         <!--Bắt đầu một sản phẩm-->
                                         <?php
                                         $product = new WP_Query(array(
@@ -152,14 +148,13 @@
                                             'order'          => 'ASC',
                                             'posts_per_page' => '8'));
                                         ?>
-
                                         <?php while ($product->have_posts()) : $product->the_post(); ?>
                                             <li>
                                                 <figure>
                                                     <a href="#"><?php the_post_thumbnail(); ?></a>
                                                     <a class="aa-add-card-btn"
                                                        href="<?php the_permalink() ?>"><span
-                                                                class="fa fa-shopping-cart"></span>Add To Cart</a>
+                                                                class="fa fa-shopping-cart"></span>Mua ngay</a>
                                                     <figcaption>
                                                         <h4 class="aa-product-title"><a
                                                                     href="#"> <?php the_title(); ?></a></h4>
@@ -177,24 +172,18 @@
                                                        data-target="#quick-view-modal"><span
                                                                 class="fa fa-search"></span></a>
                                                 </div>
-                                                <!-- product badge -->
                                             </li>
                                             <!-- Sản phẩm --><?php endwhile;
                                         wp_reset_query(); ?>
-
-                                        <!-- start single product item -->
-
                                     </ul>
+                                    <a class="aa-browse-btn" href="http://www.dawp.xyz/index.php/product-category/da-xay/">Xem sản phẩm <span
+                                                class="fa fa-long-arrow-right"></span></a>
                                 </div>
                                 <!--ĐÓNG DANH MỤC SẢN PHẨM THỨ 3-->
 
                                 <!--ĐÓNG DANH MỤC SẢN PHẨM THỨ 4-->
                                 <div class="tab-pane fade" id="dm4">
-                                    <a class="aa-browse-btn" href="#">Browse all Product <span
-                                                class="fa fa-long-arrow-right"></span></a>
                                     <ul class="aa-product-catg">
-                                        <!-- start single product item -->
-
                                         <!--Bắt đầu một sản phẩm-->
                                         <?php
                                         $product = new WP_Query(array(
@@ -212,14 +201,12 @@
                                             'posts_per_page' => '8'));
                                         ?>
                                         <?php while ($product->have_posts()) : $product->the_post(); ?>
-
-
                                             <li>
                                                 <figure>
                                                     <a href="#"><?php the_post_thumbnail(); ?></a>
                                                     <a class="aa-add-card-btn"
                                                        href="<?php the_permalink() ?>"><span
-                                                                class="fa fa-shopping-cart"></span>Add To Cart</a>
+                                                                class="fa fa-shopping-cart"></span>Mua ngay</a>
                                                     <figcaption>
                                                         <h4 class="aa-product-title"><a
                                                                     href="#"> <?php the_title(); ?></a></h4>
@@ -237,13 +224,12 @@
                                                        data-target="#quick-view-modal"><span
                                                                 class="fa fa-search"></span></a>
                                                 </div>
-                                                <!-- product badge -->
-                                                <span class="aa-badge aa-sale" href="#">SALE!</span>
                                             </li>
                                             <!-- Sản phẩm --><?php endwhile;
                                         wp_reset_query(); ?>
-                                        <!-- start single product item -->
                                     </ul>
+                                    <a class="aa-browse-btn" href="http://www.dawp.xyz/index.php/product-category/ca_phe/">Xem sản phẩm <span
+                                                class="fa fa-long-arrow-right"></span></a>
                                 </div>
                                 <!--ĐÓNG DANH MỤC SẢN PHẨM THỨ 4-->
                             </div>

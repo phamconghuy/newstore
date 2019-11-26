@@ -13,7 +13,7 @@
                         </ul>
                         <!-- Tab panes -->
                         <div class="tab-content">
-                            <!-- DANH MỤC SẢN PHẨM KHUẾN MÃI -->
+                            <!-- DANH MỤC SẢN PHẨM KHUYẾN MÃI -->
                             <div class="tab-pane fade in active" id="sale">
                                 <ul class="aa-product-catg aa-featured-slider">
                                     <?php
@@ -68,7 +68,6 @@
                                                 'order'          => 'DESC',
                                             ))));
                                     ?>
-                                    <!-- start single product item -->
                                     <?php while ($product->have_posts()) : $product->the_post(); ?>
                                         <li>
                                             <figure>
@@ -124,7 +123,7 @@
                                                 <a href="<?php the_permalink() ?>" data-toggle2="tooltip" data-placement="top" title="Chi tiết" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
                                             </div>
                                             <!-- product badge -->
-                                            <span class="aa-badge aa-hot" href="#">NỔI BẬC</span>
+                                            <span class="aa-badge aa-hot" href="#">NỔI BẬT</span>
                                         </li>
                                     <?php endwhile; wp_reset_postdata(); ?>
                                 </ul>
