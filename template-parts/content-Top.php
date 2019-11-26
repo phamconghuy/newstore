@@ -9,7 +9,7 @@
                             <!-- start prduct navigation -->
                             <ul class="nav nav-tabs aa-products-tab">
                                 <li class="active"><a href="#dm1" data-toggle="tab">ĐỒ ĂN VẶT</a></li>
-                                <li><a href="#dm2" data-toggle="tab">TRÀ </a></li>
+                                <li><a href="#dm2" data-toggle="tab">TRÀ SỮA </a></li>
                                 <li><a href="#dm3" data-toggle="tab">ĐÁ BÀO</a></li>
                                 <li><a href="#dm4" data-toggle="tab">CÀ PHÊ</a></li>
                             </ul>
@@ -85,7 +85,7 @@
                                                 array(
                                                     'taxonomy' => 'product_cat',
                                                     'field'    => 'slug',
-                                                    'terms'    => 'tra'
+                                                    'terms'    => 'tra-sua'
                                                 )
                                             ),
                                             'orderby'        => 'ID',
@@ -121,7 +121,7 @@
                                         wp_reset_query(); ?>
                                         <!-- start single product item -->
                                     </ul>
-                                    <a class="aa-browse-btn" href="http://www.dawp.xyz/index.php/product-category/tra/">Xem sản phẩm <span
+                                    <a class="aa-browse-btn" href="http://www.dawp.xyz/index.php/product-category/tra-sua/">Xem sản phẩm <span
                                                 class="fa fa-long-arrow-right"></span></a>
                                 </div>
                                 <!--ĐÓNG DANH MỤC SẢN PHẨM THỨ 2-->
@@ -171,7 +171,7 @@
                                                 </div>
                                             </li>
                                             <!-- Sản phẩm --><?php endwhile;
-                                        wp_reset_query(); ?>
+                                        wp_reset_query(); ?>S
                                     </ul>
                                     <a class="aa-browse-btn" href="http://www.dawp.xyz/index.php/product-category/da-xay/">Xem sản phẩm <span
                                                 class="fa fa-long-arrow-right"></span></a>
