@@ -129,8 +129,6 @@
 
                                 <!--ĐÓNG DANH MỤC SẢN PHẨM THỨ 3-->
                                 <div class="tab-pane fade" id="dm3">
-                                    <a class="aa-browse-btn" href="#">Xem sản phẩm <span
-                                                class="fa fa-long-arrow-right"></span></a>
                                     <ul class="aa-product-catg">
                                         <!--Bắt đầu một sản phẩm-->
                                         <?php

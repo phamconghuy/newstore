@@ -61,11 +61,10 @@
                                         'post_type'      => 'product',
                                         'posts_per_page' => '8',
                                         'meta_query'     => array(
-                                            'relation' => 'OR',
                                             array(
                                                 'meta_key'       => '_wc_average_rating',
                                                 'orderby'        => 'meta_value_num',
-                                                'order'          => 'DESC',
+                                                'order'          => 'ASC',
                                             ))));
                                     ?>
                                     <?php while ($product->have_posts()) : $product->the_post(); ?>

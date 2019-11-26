@@ -24,6 +24,8 @@ get_template_part('/template-parts/content','PromoSection');
 
 get_template_part('/template-parts/content','Top');
 
+get_template_part('/template-parts/content','Banner');
+
 get_template_part('/template-parts/content','Buttom');
 ?>
 
