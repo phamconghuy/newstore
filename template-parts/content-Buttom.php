@@ -38,8 +38,8 @@
                                             <figcaption>
                                                 <h4 class="aa-product-title"><a
                                                             href="#"> <?php the_title(); ?></a></h4>
-                                                <span class="aa-product-price"> <?php echo get_post_meta(get_the_ID(), '_regular_price', true); ?>vnđ</span>
-                                                <span class="aa-product-price "><del> <?php echo get_post_meta(get_the_ID(), '_sale_price', true); ?>vnđ</del></span>
+                                                <span class="aa-product-price"> <del><?php echo get_post_meta(get_the_ID(), '_regular_price', true); ?>vnđ</del></span>
+                                                <span class="aa-product-price "> <?php echo get_post_meta(get_the_ID(), '_sale_price', true); ?>vnđ</span>
                                             </figcaption>
                                         </figure>
                                         <div class="aa-product-hvr-content">
