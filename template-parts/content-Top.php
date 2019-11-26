@@ -53,7 +53,7 @@
                                                                rel="bookmark"> <?php the_title(); ?>
                                                             </a>
                                                         </h4>
-                                                        <span class="aa-product-price">$<?php echo get_post_meta(get_the_ID(), '_regular_price', true); ?></span>
+                                                        <span class="aa-product-price">vnđ<?php echo get_post_meta(get_the_ID(), '_regular_price', true); ?></span>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="aa-product-hvr-content">
@@ -106,7 +106,7 @@
                                                     <figcaption>
                                                         <h4 class="aa-product-title"><a
                                                                     href="#"> <?php the_title(); ?></a></h4>
-                                                        <span class="aa-product-price">$<?php echo get_post_meta(get_the_ID(), '_regular_price', true); ?></span>
+                                                        <span class="aa-product-price">vnđ<?php echo get_post_meta(get_the_ID(), '_regular_price', true); ?></span>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="aa-product-hvr-content">
@@ -163,7 +163,7 @@
                                                     <figcaption>
                                                         <h4 class="aa-product-title"><a
                                                                     href="#"> <?php the_title(); ?></a></h4>
-                                                        <span class="aa-product-price">$<?php echo get_post_meta(get_the_ID(), '_regular_price', true); ?></span>
+                                                        <span class="aa-product-price">vnđ<?php echo get_post_meta(get_the_ID(), '_regular_price', true); ?></span>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="aa-product-hvr-content">
@@ -223,8 +223,7 @@
                                                     <figcaption>
                                                         <h4 class="aa-product-title"><a
                                                                     href="#"> <?php the_title(); ?></a></h4>
-                                                        <span class="aa-product-price">$<?php echo get_post_meta(get_the_ID(), '_regular_price', true); ?></span>
-                                                        <span class="aa-product-price"><del>$<?php echo get_post_meta(get_the_ID(), '_sale_price', true); ?></del></span>
+                                                        <span class="aa-product-price">vnđ<?php echo get_post_meta(get_the_ID(), '_regular_price', true); ?></span>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="aa-product-hvr-content">
