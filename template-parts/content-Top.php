@@ -171,7 +171,7 @@
                                                 </div>
                                             </li>
                                             <!-- Sản phẩm --><?php endwhile;
-                                        wp_reset_query(); ?>S
+                                        wp_reset_query(); ?>
                                     </ul>
                                     <a class="aa-browse-btn" href="http://www.dawp.xyz/index.php/product-category/da-xay/">Xem sản phẩm <span
                                                 class="fa fa-long-arrow-right"></span></a><br>
