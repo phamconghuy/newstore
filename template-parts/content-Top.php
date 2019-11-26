@@ -71,7 +71,7 @@
                                     </ul>
 
                                     <a class="aa-browse-btn" href="http://www.dawp.xyz/index.php/product-category/do-an-vat/">Xem tất cả sản phẩm<span
-                                                class="fa fa-long-arrow-right"></span></a>
+                                                class="fa fa-long-arrow-right"></span></a><br>
                                 </div>
                                 <!--ĐÓNG DANH MỤC SẢN PHẨM THỨ 2-->
                                 <div class="tab-pane fade" id="dm2">
@@ -122,7 +122,7 @@
                                         <!-- start single product item -->
                                     </ul>
                                     <a class="aa-browse-btn" href="http://www.dawp.xyz/index.php/product-category/tra-sua/">Xem sản phẩm <span
-                                                class="fa fa-long-arrow-right"></span></a>
+                                                class="fa fa-long-arrow-right"></span></a><br>
                                 </div>
                                 <!--ĐÓNG DANH MỤC SẢN PHẨM THỨ 2-->
 
@@ -174,7 +174,7 @@
                                         wp_reset_query(); ?>S
                                     </ul>
                                     <a class="aa-browse-btn" href="http://www.dawp.xyz/index.php/product-category/da-xay/">Xem sản phẩm <span
-                                                class="fa fa-long-arrow-right"></span></a>
+                                                class="fa fa-long-arrow-right"></span></a><br>
                                 </div>
                                 <!--ĐÓNG DANH MỤC SẢN PHẨM THỨ 3-->
 
@@ -226,7 +226,7 @@
                                         wp_reset_query(); ?>
                                     </ul>
                                     <a class="aa-browse-btn" href="http://www.dawp.xyz/index.php/product-category/ca_phe/">Xem sản phẩm <span
-                                                class="fa fa-long-arrow-right"></span></a>
+                                                class="fa fa-long-arrow-right"></span></a><br>
                                 </div>
                                 <!--ĐÓNG DANH MỤC SẢN PHẨM THỨ 4-->
                             </div>
