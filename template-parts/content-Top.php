@@ -54,7 +54,6 @@
                                                             </a>
                                                         </h4>
                                                         <span class="aa-product-price">$<?php echo get_post_meta(get_the_ID(), '_regular_price', true); ?></span>
-                                                        <span class="aa-product-price"><del>$<?php echo get_post_meta(get_the_ID(), '_sale_price', true); ?></del></span>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="aa-product-hvr-content">
@@ -66,7 +65,6 @@
                                                                 class="fa fa-search">View</span></a>
                                                 </div>
                                                 <!-- product badge -->
-                                                <span class="aa-badge aa-sale" href="#">SALE!</span>
                                                 <p><?php ?></p>
                                             </li>
                                             <!-- Sản phẩm --><?php endwhile;
@@ -109,7 +107,6 @@
                                                         <h4 class="aa-product-title"><a
                                                                     href="#"> <?php the_title(); ?></a></h4>
                                                         <span class="aa-product-price">$<?php echo get_post_meta(get_the_ID(), '_regular_price', true); ?></span>
-                                                        <span class="aa-product-price"><del>$<?php echo get_post_meta(get_the_ID(), '_sale_price', true); ?></del></span>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="aa-product-hvr-content">
@@ -124,7 +121,6 @@
                                                                 class="fa fa-search"></span></a>
                                                 </div>
                                                 <!-- product badge -->
-                                                <span class="aa-badge aa-sale" href="#">SALE!</span>
                                             </li>
                                             <!-- Sản phẩm --><?php endwhile;
                                         wp_reset_query(); ?>
@@ -156,9 +152,8 @@
                                             'order'          => 'ASC',
                                             'posts_per_page' => '8'));
                                         ?>
+
                                         <?php while ($product->have_posts()) : $product->the_post(); ?>
-
-
                                             <li>
                                                 <figure>
                                                     <a href="#"><?php the_post_thumbnail(); ?></a>
@@ -169,7 +164,6 @@
                                                         <h4 class="aa-product-title"><a
                                                                     href="#"> <?php the_title(); ?></a></h4>
                                                         <span class="aa-product-price">$<?php echo get_post_meta(get_the_ID(), '_regular_price', true); ?></span>
-                                                        <span class="aa-product-price"><del>$<?php echo get_post_meta(get_the_ID(), '_sale_price', true); ?></del></span>
                                                     </figcaption>
                                                 </figure>
                                                 <div class="aa-product-hvr-content">
@@ -184,7 +178,6 @@
                                                                 class="fa fa-search"></span></a>
                                                 </div>
                                                 <!-- product badge -->
-                                                <span class="aa-badge aa-sale" href="#">khuyến mãi!</span>
                                             </li>
                                             <!-- Sản phẩm --><?php endwhile;
                                         wp_reset_query(); ?>

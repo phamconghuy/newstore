@@ -293,7 +293,6 @@ if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/class-newstore-wc-widget-products.php';
 	require get_template_directory() . '/inc/woocommerce.php';
 }
-add_action( 'woocommerce_archive_description', 'woocommerce_category_image', 2 );
 function woocommerce_category_image() {
     if ( is_product_category() ){
         global $wp_query;
