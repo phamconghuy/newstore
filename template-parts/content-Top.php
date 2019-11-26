@@ -8,10 +8,10 @@
                         <div class="aa-product-inner">
                             <!-- start prduct navigation -->
                             <ul class="nav nav-tabs aa-products-tab">
-                                <li class="active"><a href="#dm1" data-toggle="tab">Đồ Ăn vặt</a></li>
-                                <li><a href="#dm2" data-toggle="tab">Chè </a></li>
-                                <li><a href="#dm3" data-toggle="tab">Đá Bào</a></li>
-                                <li><a href="#dm4" data-toggle="tab">Cà Phê</a></li>
+                                <li class="active"><a href="#dm1" data-toggle="tab">ĐỒ ĂN VẶT</a></li>
+                                <li><a href="#dm2" data-toggle="tab">TRÀ </a></li>
+                                <li><a href="#dm3" data-toggle="tab">ĐÁ BÀO</a></li>
+                                <li><a href="#dm4" data-toggle="tab">CÀ PHÊ</a></li>
                             </ul>
                             <!-- Tab panes -->
                             <div class="tab-content">
@@ -30,7 +30,6 @@
                                                     'terms'    => 'do-an-vat'
                                                 )
                                             ),
-                                            // products orderby="date" order="desc"  lấy sản phẩm mới nhất
                                             'orderby'        => 'ID',
                                             'order'          => 'ASC',
                                             'posts_per_page' => '8'));
@@ -86,7 +85,7 @@
                                                 array(
                                                     'taxonomy' => 'product_cat',
                                                     'field'    => 'slug',
-                                                    'terms'    => 'che'
+                                                    'terms'    => 'tra'
                                                 )
                                             ),
                                             'orderby'        => 'ID',
@@ -122,7 +121,7 @@
                                         wp_reset_query(); ?>
                                         <!-- start single product item -->
                                     </ul>
-                                    <a class="aa-browse-btn" href="http://www.dawp.xyz/index.php/product-category/che/">Xem sản phẩm <span
+                                    <a class="aa-browse-btn" href="http://www.dawp.xyz/index.php/product-category/tra/">Xem sản phẩm <span
                                                 class="fa fa-long-arrow-right"></span></a>
                                 </div>
                                 <!--ĐÓNG DANH MỤC SẢN PHẨM THỨ 2-->
