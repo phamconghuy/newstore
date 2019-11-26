@@ -13,7 +13,7 @@
                         </ul>
                         <!-- Tab panes -->
                         <div class="tab-content">
-                            <!-- Start men popular category -->
+                            <!-- DANH MỤC SẢN PHẨM KHUẾN MÃI -->
                             <div class="tab-pane fade in active" id="sale">
                                 <ul class="aa-product-catg aa-featured-slider">
                                     <?php
@@ -49,15 +49,11 @@
                                         </div>
                                         <span class="aa-badge aa-badge aa-sale" href="#">KHUYẾN MÃI</span>
                                     </li>
-                                    <?php endwhile; ?>>
+                                    <?php endwhile; ?>
                                 </ul>
                             </div>
-                            <!-- / featured product category -->
-
-                            <!-- / popular product category -->
-
-
-                            <!-- start featured product category -->
+                            <!-- DANH MỤC SẢN PHẨM KHUẾN MÃI -->
+                            <!-- DANH MỤC SẢN PHẨM BÁN CHẠY -->
                             <div class="tab-pane fade" id="banchay">
                                 <ul class="aa-product-catg aa-featured-slider">
                                     <?php
@@ -92,12 +88,11 @@
                                             <!-- product badge -->
                                             <span class="aa-badge aa-sold-out" href="#">BÁN CHẠY</span>
                                         </li>
-                                    <?php endwhile; ?>>
+                                    <?php endwhile; ?>
                                 </ul>
-                            </div> <span class="aa-badge aa-hot" href="#">HOT!</span>
-                            <!-- / featured product category -->
-
-                            <!-- start latest product category -->
+                            </div>
+                            <!-- DANH MỤC SẢN PHẨM BÁN CHẠY -->
+                            <!-- DANH MỤC SẢN PHẨM NỔI BẬC -->
                             <div class="tab-pane fade" id="noibac">
                                 <ul class="aa-product-catg aa-latest-slider">
                                     <?php
@@ -129,12 +124,12 @@
                                                 <a href="<?php the_permalink() ?>" data-toggle2="tooltip" data-placement="top" title="Chi tiết" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
                                             </div>
                                             <!-- product badge -->
-                                            <span class="aa-badge aa-hot" href="#">HOT!</span>
+                                            <span class="aa-badge aa-hot" href="#">NỔI BẬC</span>
                                         </li>
                                     <?php endwhile; wp_reset_postdata(); ?>
                                 </ul>
                             </div>
-                            <!-- / latest product category -->
+                            <!-- DANH MỤC SẢN PHẨM NỔI BẬC -->
                         </div>
                     </div>
                 </div>
