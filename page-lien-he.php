@@ -58,11 +58,11 @@ do_action( 'newstore_before_blog_post');
                                 <div class="col-md-4">
                                     <div class="aa-contact-address-right">
                                         <address>
-                                            <h4>DailyShop</h4>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum modi dolor facilis! Nihil error, eius.</p>
+                                            <h4>Shop Tea</h4>
+                                            <p>Cuối Hẻm 551 Hà Huy Giáp Phường Thạnh Lộc Quận 12 Thành Phố Hồ Chí Mình</p>
                                             <p><span class="fa fa-home"></span>Huntsville, AL 35813, USA</p>
                                             <p><span class="fa fa-phone"></span>+ 021.343.7575</p>
-                                            <p><span class="fa fa-envelope"></span>Email: support@dailyshop.com</p>
+                                            <p><span class="fa fa-envelope"></span>Email: phamconghuy2609@gmail.com</p>
                                         </address>
                                     </div>
                                 </div>
