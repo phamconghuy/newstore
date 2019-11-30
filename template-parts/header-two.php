@@ -59,7 +59,7 @@
                                     <li><a href="http://www.dawp.xyz/index.php/dang-ky/">Đăng ký</a></li>
                                     <li class="hidden-xs"><a href="http://www.dawp.xyz/index.php/cart/">Giỏ hàng</a></li>
                                     <li class="hidden-xs"><a href="http://www.dawp.xyz/index.php/checkout/">Thanh toán</a></li>
-                                    <li><a href="http://www.dawp.xyz/index.php/my-account/" data-toggle="modal" >Đăng nhập</a></li>
+                                    <li class="hidden-xs" ><a href="http://www.dawp.xyz/index.php/my-account/edit-account/" >Đăng nhập</a></li>
                                 </ul>
                             </div>
                         </div>
