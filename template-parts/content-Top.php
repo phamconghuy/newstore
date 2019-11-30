@@ -8,7 +8,7 @@
                         <div class="aa-product-inner">
                             <!-- start prduct navigation -->
                             <ul class="nav nav-tabs aa-products-tab">
-                                <li class="active"><a href="#dm1" data-toggle="tab">ĐỒ ĂN VẶT</a></li>
+                                <li class="active"><a href="#dm1" data-toggle="tab">MATCHA LATTE</a></li>
                                 <li><a href="#dm2" data-toggle="tab">TRÀ SỮA </a></li>
                                 <li><a href="#dm3" data-toggle="tab">ĐÁ BÀO</a></li>
                                 <li><a href="#dm4" data-toggle="tab">CÀ PHÊ</a></li>
@@ -27,7 +27,7 @@
                                                 array(
                                                     'taxonomy' => 'product_cat',
                                                     'field'    => 'slug',
-                                                    'terms'    => 'do-an-vat'
+                                                    'terms'    => 'matcha-latte'
                                                 )
                                             ),
                                             'orderby'        => 'ID',
