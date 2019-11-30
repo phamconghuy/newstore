@@ -55,11 +55,11 @@
                             <!-- / header top left -->
                             <div class="aa-header-top-right">
                                 <ul class="aa-head-top-nav-right">
-                                    <li><a href="account.html">My Account</a></li>
-                                    <li class="hidden-xs"><a href="wishlist.html">Wishlist</a></li>
-                                    <li class="hidden-xs"><a href="cart.html">My Cart</a></li>
-                                    <li class="hidden-xs"><a href="checkout.html">Checkout</a></li>
-                                    <li><a href="" data-toggle="modal" data-target="#login-modal">Login</a></li>
+                                    <li><a href="http://www.dawp.xyz/index.php/my-account/edit-account/">Tài khoản</a></li>
+                                    <li><a href="http://www.dawp.xyz/index.php/dang-ky/">Đăng ký</a></li>
+                                    <li class="hidden-xs"><a href="http://www.dawp.xyz/index.php/cart/">Giỏ hàng</a></li>
+                                    <li class="hidden-xs"><a href="http://www.dawp.xyz/index.php/checkout/">Thanh toán</a></li>
+                                    <li><a href="http://www.dawp.xyz/index.php/my-account/" data-toggle="modal" data-target="#login-modal">Đăng nhập</a></li>
                                 </ul>
                             </div>
                         </div>

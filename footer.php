@@ -63,11 +63,11 @@
                                 <div class="aa-footer-widget">
                                     <h3>Menu</h3>
                                     <ul class="aa-footer-nav">
-                                        <li><a href="#">Trang chủ</a></li>
-                                        <li><a href="#">Dịch vụ </a></li>
-                                        <li><a href="#">Sản phẩm</a></li>
-                                        <li><a href="#">Giới thiệu</a></li>
-                                        <li><a href="#">Liên hệ</a></li>
+                                        <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Trang chủ</a></li>
+                                        <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Dịch vụ </a></li>
+                                        <li><a href="http://www.dawp.xyz/index.php/shop/">Sản phẩm</a></li>
+                                        <li><a href="http://www.dawp.xyz/index.php/gioi-thieu/">Giới thiệu</a></li>
+                                        <li><a href="http://www.dawp.xyz/index.php/lien-he/">Liên hệ</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -101,10 +101,10 @@
                                     <div class="aa-footer-widget">
                                         <h3>Liên kết hữu ích</h3>
                                         <ul class="aa-footer-nav">
-                                            <li><a href="#">Bản đồ</a></li>
-                                            <li><a href="#">Tìm kiếm</a></li>
-                                            <li><a href="#">Tìm kiếm nâng cao</a></li>
-                                            <li><a href="#">Nhà cung cấp</a></li>
+                                            <li><a href="https://www.google.com/maps/search/Qu%C3%A1n+c%C3%A0+ph%C3%AA/@10.839483,106.692095,14z?hl=vi">Bản đồ</a></li>
+                                            <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Tìm kiếm</a></li>
+                                            <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Tìm kiếm nâng cao</a></li>
+                                            <li><a href="https://www.google.com.vn/search?q=L%C3%80M-G%C3%8C-C%C3%93+-AI-CUNG-C%E1%BA%A4P&hl=vi&tbs=ic:specific,isc:black,itp:animated,isz:l,sur:fmc&tbm=isch&sxsrf=ACYBGNRtieanyuBr14koAVxuIB0j4AN-ig:1575099949565&source=lnt&sa=X&ved=0ahUKEwj53-rHuJHmAhWxxIsBHfLSAZ8QpwUIIg&biw=1536&bih=731&dpr=1.25">Nhà cung cấp</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -119,10 +119,10 @@
                                             <p><span class="fa fa-envelope"></span>dawp@gmail.com</p>
                                         </address>
                                         <div class="aa-footer-social">
-                                            <a href="#"><span class="fa fa-facebook"></span></a>
-                                            <a href="#"><span class="fa fa-twitter"></span></a>
-                                            <a href="#"><span class="fa fa-google-plus"></span></a>
-                                            <a href="#"><span class="fa fa-youtube"></span></a>
+                                            <a href="https://www.facebook.com/profile.php?id=100007436920626&ref=br_rs"><span class="fa fa-facebook"></span></a>
+                                            <a href="ĐỂ-CHO-VUI-CHỨ-KHÔNG-CÓ-XÀI"><span class="fa fa-twitter"></span></a>
+                                            <a href="ĐỂ-CHO-VUI-CHỨ-KHÔNG-CÓ-XÀI"><span class="fa fa-google-plus"></span></a>
+                                            <a href="https://www.youtube.com/channel/UCKD7Nk7MduMV1Y2k8TImCCA?view_as=subscriber"><span class="fa fa-youtube"></span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -139,7 +139,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="aa-footer-bottom-area">
-                        <p><a href="http://www.dawp.xyz/">dawp.xyz</a></p>
+                        <p><a href="http://www.dawp.xyz/">SHOP TEA</a></p>
                         <div class="aa-footer-payment">
                             <span class="fa fa-cc-mastercard"></span>
                             <span class="fa fa-cc-visa"></span>
@@ -150,13 +150,13 @@
                             <div class="container">
                                 <span class="copy-text" style="color: #777">
                                 <?php
-                                printf(esc_html__('Copyright &copy; %1$s %2$s All Right Reserved.', 'newstore'), esc_html(date_i18n(__('Y', 'newstore'))), get_bloginfo('name', 'display'));
+                                printf(esc_html__('Copyright   &copy; | SHOP TEA .', 'newstore'), esc_html(date_i18n(__('Y', 'newstore'))), get_bloginfo('name', 'display'));
                                 ?>
                                 </span>
                                 <span class="sep" style="color: #777">|
                                 <?php
                                 /* translators: 1: Theme name, 2: Theme author. */
-                                printf(esc_html__('Theme: %1$s by %2$s', 'newstore'), '<a href="' . esc_url('https://themefarmer.com/free-themes/newstore/') . '" tyle="color: #777" >DAWP</a>', 'ThemeFarmer');
+                                printf(esc_html__('Được cắt ghép bởi: %1$s  %2$s', 'newstore'), '<a href="' . esc_url('https://themefarmer.com/free-themes/newstore/') . '" tyle="color: #777" >CHÚNG TUI </a>', 'Nguồn đâu đó trên mạng');
                                 ?></span>
                             </div>
                         </div>
@@ -176,16 +176,16 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <h4>Đăng nhập hoặc đăng ký</h4>
                 <form class="aa-login-form" action="">
-                    <label for="">Username hoặc Emai<span>*</span></label>
+                    <label for="">Username hoặc Email<span>*</span></label>
                     <input type="text" placeholder="Username hoặc Email">
-                    <label for="">Password<span>*</span></label>
-                    <input type="password" placeholder="Password">
+                    <label for="">Mật khẩu<span>*</span></label>
+                    <input type="password" placeholder="Nhập mật khẩu của bạn">
                     <button class="aa-browse-btn" type="submit">Đăng nhập</button>
                     <label for="rememberme" class="rememberme"><input type="checkbox" id="rememberme"> Nhớ mật khẩu
                     </label>
-                    <p class="aa-lost-password"><a href="#">Quên mật khẩu ?</a></p>
+                    <p class="aa-lost-password"><a href="http://www.dawp.xyz/index.php/my-account/lost-password/">Quên mật khẩu ?</a></p>
                     <div class="aa-register-now">
-                        Không có tài khoản ?<a href="account.html">Đăng ký!</a>
+                        Không có tài khoản ?<a href="http://www.dawp.xyz/index.php/dang-ky/">Đăng ký!</a>
                     </div>
                 </form>
             </div>
