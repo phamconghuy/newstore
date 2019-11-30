@@ -43,7 +43,7 @@ do_action( 'newstore_before_blog_post');
             ?>
             <?php
             if(! empty($success) ) :
-                $login_page  = home_url( 'http://www.dawp.xyz/index.php/my-account/' );
+                $login_page  = home_url( 'index.php/my-account/' );
                 echo ''.$success. '<a href='.$login_page.'> Đăng nhập</a>'.'';
             endif;
             ?>
