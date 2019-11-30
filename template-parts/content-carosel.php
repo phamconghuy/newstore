@@ -20,7 +20,7 @@ $posts = get_posts()
                             <a href="<?php the_permalink() ?>"><h2 data-seq><?php echo wp_trim_words($post ->post_title, '5') ;   ?></h2></a>
                             <a href="<?php the_permalink() ?>"><p data-seq style="color: #000e14"><b><?php echo wp_trim_words($post ->post_excerpt, '15') ;   ?></b></p></a>
                             <a data-seq href="http://www.dawp.xyz/DAWP/index.php/shop/" class="aa-shop-now-btn aa-secondary-btn">SHOP NOW</a>
-                        </div></a>
+                        </div></a>  
                     </li>
             <?php
             }
