@@ -168,31 +168,7 @@
 </footer>
 <!-- / footer -->
 
-<!-- Login Modal -->
-<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4>Đăng nhập hoặc đăng ký</h4>
-                <form class="aa-login-form" action="">
-                    <label for="">Username hoặc Email<span>*</span></label>
-                    <input type="text" placeholder="Username hoặc Email">
-                    <label for="">Mật khẩu<span>*</span></label>
-                    <input type="password" placeholder="Nhập mật khẩu của bạn">
-                    <button class="aa-browse-btn" type="submit">Đăng nhập</button>
-                    <label for="rememberme" class="rememberme"><input type="checkbox" id="rememberme"> Nhớ mật khẩu
-                    </label>
-                    <p class="aa-lost-password"><a href="http://www.dawp.xyz/index.php/my-account/lost-password/">Quên mật khẩu ?</a></p>
-                    <div class="aa-register-now">
-                        Không có tài khoản ?<a href="http://www.dawp.xyz/index.php/dang-ky/">Đăng ký!</a>
-                    </div>
-                </form>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div>
-</div><!-- #page -->
+
 
 <?php wp_footer(); ?>
 <!-- jQuery library -->
