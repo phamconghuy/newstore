@@ -43,7 +43,7 @@
                                             </figcaption>
                                         </figure>
                                         <div class="aa-product-hvr-content">
-                                            <a href="<?php the_permalink() ?>" data-toggle="tooltip" data-placement="top" title="Ưa thích"><span class="fa fa-heart-o"></span></a>
+                                            <a href="[tfwc_tool_wishilst]" data-toggle="tooltip" data-placement="top" title="Ưa thích"><span class="fa fa-heart-o"></span></a>
                                             <a href="<?php the_permalink() ?>" data-toggle="tooltip" data-placement="top" title="Compare"><span class="fa fa-exchange"></span></a>
                                             <a href="<?php the_permalink() ?>" data-toggle2="tooltip" data-placement="top" title="Chi tiết" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
                                         </div>
