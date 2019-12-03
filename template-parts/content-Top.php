@@ -56,7 +56,7 @@
                                                     </figcaption>
                                                 </figure>
                                                 <div class="aa-product-hvr-content">
-                                                    <a href="#" data-toggle="tooltip" data-placement="top"
+                                                    <a href="<?php the_permalink() ?>" data-toggle="tooltip" data-placement="top"
                                                        title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
                                                     <a href="#" data-toggle="tooltip" data-placement="top"
                                                        title="Compare"><span class="fa fa-exchange"></span></a>
@@ -106,7 +106,7 @@
                                                     </figcaption>
                                                 </figure>
                                                 <div class="aa-product-hvr-content">
-                                                    <a href="#" data-toggle="tooltip" data-placement="top"
+                                                    <a href="<?php the_permalink() ?>" data-toggle="tooltip" data-placement="top"
                                                        title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
                                                     <a href="#" data-toggle="tooltip" data-placement="top"
                                                        title="Compare"><span class="fa fa-exchange"></span></a>
@@ -159,7 +159,7 @@
                                                     </figcaption>
                                                 </figure>
                                                 <div class="aa-product-hvr-content">
-                                                    <a href="#" data-toggle="tooltip" data-placement="top"
+                                                    <a href="<?php the_permalink() ?>" data-toggle="tooltip" data-placement="top"
                                                        title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
                                                     <a href="#" data-toggle="tooltip" data-placement="top"
                                                        title="Compare"><span class="fa fa-exchange"></span></a>
@@ -211,7 +211,7 @@
                                                     </figcaption>
                                                 </figure>
                                                 <div class="aa-product-hvr-content">
-                                                    <a href="#" data-toggle="tooltip" data-placement="top"
+                                                    <a href="<?php the_permalink() ?>" data-toggle="tooltip" data-placement="top"
                                                        title="Add to Wishlist"><span class="fa fa-heart-o"></span></a>
                                                     <a href="#" data-toggle="tooltip" data-placement="top"
                                                        title="Compare"><span class="fa fa-exchange"></span></a>
