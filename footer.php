@@ -39,8 +39,7 @@
                 <div class="aa-subscribe-area">
                     <h3>Đăng ký tài khoản </h3>
                     <p>Hãy đăng ký để nhận được những thông báo mới nhất về sản phẩm!!</p>
-                    <form action="" class="aa-subscribe-form">
-                        <input type="email" name="" id="" placeholder="Email">
+                    <form action="page-dang-ky.php" class="aa-subscribe-form">
                         <input type="submit" value="Đăng ký">
                     </form>
                 </div>
