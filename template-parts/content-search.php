@@ -8,6 +8,7 @@
  */
 
 ?>
+
 <article  id="post-<?php the_ID(); ?>"  <?php post_class("col-12 content-index"); ?>>
 	<div class="content-index-inner">
 		<?php if(has_post_thumbnail()): ?>

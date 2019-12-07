@@ -4,7 +4,7 @@
 		<?php 
 			$swp_cat_dropdown_args = array(
 				'taxonomy' 		   => 'product_cat',
-				'show_option_all'  => esc_html__( 'All Categories', 'newstore'),
+				'show_option_all'  => esc_html__( 'Chọn Loại', 'newstore'),
 				'name'             => 'product_cat',
 				'class'            => 'search-form-categories',
 				'value_field'	   => 'slug',
@@ -19,3 +19,4 @@
 		<button type="submit" class="main-search-submit" ><i class="fa fa-search"></i></button>
 	</div>
 </form>
+<!--All Categories-->
