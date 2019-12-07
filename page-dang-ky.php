@@ -3,10 +3,16 @@ $layout_class = newstore_blog_layout();
 get_header();
 do_action( 'newstore_before_blog_post');
 ?>
-
+<div>
+    <h1>Tạo Tài Khoản Mới</h1>
+    <h3>Nhanh Chóng và dễ dàng</h3>
+</div>
+    <br>
+    <br>
 <div class="container">
     <div class="row">
-        <div class="col-sm-3"></div>
+        <div class="col-sm-3">
+        </div>
         <div class="col-sm-6">
 
 
