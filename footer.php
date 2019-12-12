@@ -32,23 +32,6 @@
     <?php endif; ?>
     <a href="#" id="scroll-top" style="display: none;"><i class="fa fa-angle-up"></i></a>
 </footer><!-- #colophon -->
-<section id="aa-subscribe">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="aa-subscribe-area">
-                    <h3>Đăng ký tài khoản </h3>
-                    <p>Hãy đăng ký để nhận được những thông báo mới nhất về sản phẩm!!</p>
-                    <form action="page-dang-ky.php" class="aa-subscribe-form">
-                        <input type="submit" value="Đăng ký">
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- / Subscribe section -->
-
 <!-- footer -->
 <footer id="aa-footer">
     <!-- footer bottom -->

@@ -40,8 +40,20 @@ do_action( 'newstore_before_blog_post');
     <hr>
     <div class="container">
         <h2>GIỚI THIỆU THÀNH VIÊN</h2>
-        <p class="title-name">TÊN THÀNH VIÊN</p>
-        <p class="b">Thông tin của thành viên</p>
+        <p class="title-name">PHẠM CÔNG HUY</p>
+        <p class="b">. . .</p>
+        <hr>
+        <p class="title-name">NGUYỄN DIÊN SỸ ĐẠO</p>
+        <p class="b">. . . </p>
+        <hr>
+        <p class="title-name">ĐỖ XUÂN NAM</p>
+        <p class="b">. . .</p>
+        <hr>
+        <p class="title-name">LÊ NGUYỄN ANH BẰNG</p>
+        <p class="b">. . .</p>
+        <hr>
+        <p class="title-name">LÊ NGỌC PHÁT</p>
+        <p class="b">. . . </p>
         <hr>
     </div>
 <?php

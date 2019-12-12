@@ -8,7 +8,7 @@
                         <!-- start prduct navigation -->
                         <ul class="nav nav-tabs aa-products-tab">
                             <li class="active"><a href="#sale" data-toggle="tab">KHUYẾN MÃI</a></li>
-                            <li><a href="#banchay" data-toggle="tab">BÁN CHẠY</a></li>
+                            <li><a href="#moinhat" data-toggle="tab">MỚI NHẤT</a></li>
                             <li><a href="#noibac" data-toggle="tab">NỔI BẬT</a></li>
                         </ul>
                         <!-- Tab panes -->
@@ -54,7 +54,7 @@
                             </div>
                             <!-- DANH MỤC SẢN PHẨM KHUẾN MÃI -->
                             <!-- DANH MỤC SẢN PHẨM BÁN CHẠY -->
-                            <div class="tab-pane fade" id="banchay">
+                            <div class="tab-pane fade" id="moinhat">
                                 <ul class="aa-product-catg aa-featured-slider">
                                     <?php
                                     $product = new WP_Query(array(
@@ -84,7 +84,7 @@
                                                 <a href="<?php the_permalink() ?>" data-toggle2="tooltip" data-placement="top" title="Chi tiết" data-toggle="modal" data-target="#quick-view-modal"><span class="fa fa-search"></span></a>
                                             </div>
                                             <!-- product badge -->
-                                            <span class="aa-badge aa-sold-out" href="#">BÁN CHẠY</span>
+                                            <span class="aa-badge aa-sold-out" href="#">Mới</span>
                                         </li>
                                     <?php endwhile; ?>
                                 </ul>
